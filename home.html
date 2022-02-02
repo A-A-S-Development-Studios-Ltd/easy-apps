@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Easy Apps | Home</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/global-styles.css">	
+	<link rel="stylesheet" href="css/global-responsive-styles.css">
+	<link rel="stylesheet" href="css/home-styles.css">
+	<link rel="stylesheet" href="css/home-responsive-styles.css">
+	<link rel="stylesheet" href="css/home-animations.css">
+	<link rel="icon" type="image/x-icon" href="favicon.svg">
+</head>
+<body style="margin: 0; padding: 0">
+
+<div id="menu-bar">
+	<div style="text-align: center;">
+		<a href="home.html">
+			<img src="assets/logo/easy-apps-logo.svg" id="menu-logo" />	
+		</a>
+	</div>
+	<div id="menu-links">
+		<ul>
+			<li>About Us</li>
+			<li>Services</li>
+			<li>Pricing</li>
+			<li>Contact</li>
+		</ul>
+	</div>
+	<div id="menu-cta">
+		<div class="blue-button" onclick="showOverlay()">
+			<p>Free Consult</p>
+		</div>
+	</div>	
+	<div id="menu-mobile-btn">
+		<div class="menu-button" onclick="showMenu()">
+			<img src="assets/icons/menu-icon.svg" id="menu-icon" />
+		</div>
+	</div>	
+</div>
+<div id="mobile-menu" class="mobile-menu-ani">
+	<ul>
+		<li style="color: #0e76bc;"  onclick="showOverlay()">Free Consult</li>
+		<li>About Us</li>
+		<li>Services</li>
+		<li>Pricing</li>
+		<li>Contact</li>
+	</ul>
+</div>
+<div id="menu-overlay" class="mobile-menu-ani" onclick="showMenu()"></div>
+<div id="pop-window" class="pop-window-ani">
+	<div>
+		<div id="pop-banner">
+			<h4 class="white" style="margin: 10px;">Schedule your free consultation</h4>
+		</div>	
+		<div class="pop-content">
+			<p>This 15m meeting will explain more details about the app development process, applicable contracts and answer any other questions.</p>
+			<p><b>Fill out the form below to get started.</b></p>
+			<form method="post" action="contact-form.php">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="tname" placeholder="Your name..">
+
+				<label for="contact">Phone / Email:</label>
+				<input type="text" id="contact" name="contact" placeholder="Your contact info..">
+				
+				<div class="pop-actions">
+					<div>
+						<input type="submit" value="Submit">
+					</div>
+					<div class="pop-close">
+						<span onclick="closeOverlay()">Close</span>
+					</div>			
+				</div>			
+			</form>
+		</div>
+	</div>
+</div>
+<div id="full-screen-overlay" class="fs-overlay-ani" onclick="closeOverlay()"></div>
+<div class="bg-banner">
+	<img src="assets/background/white-cover.svg" class="hero-bg-cover" />
+	<img src="assets/background/ea-logo-watermark.svg" class="hero-bg-watermark hero-bgwm-ani" />	
+	<img src="assets/background/green-semi-circle.svg" class="hero-bg-gsc" />
+	<div class="grid-container hero-banner">
+		<div class="item1" style="z-index: 2;">
+			<div>
+				<h1 class="default white">Better Business App Solutions</h1>
+				<p class="default white">Ready to design your dream app? With 30+ years of app development experience, our team is ready to help.</p>
+				<div style="display: flex; margin-top: 40px">
+					<div style="margin: 0px 20px 0px 0px;"> 
+						<div class="white-button" onclick="showOverlay()">
+							<p>Get Started</p>
+						</div>
+					</div>
+					<div>
+						<p class="white" style="margin-top: 8px; font-weight: bolder;"><a class="text-link on-green">Find out More >></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item2" style="z-index: 2; position: relative;">
+			<video class="bg-dots-video" loop autoplay muted>
+			  <source src="assets/webm/bg-dots.webm" type="video/webm">
+			</video>
+			<video class="videoBanner" autoplay muted>
+			  <source src="assets/webm/easy-apps-phone.webm" type="video/webm">			  
+			  <source src="assets/png/easy-apps-phone.png" type="image/png">
+			</video>
+		</div>
+	</div>
+</div>
+<div class="grid-container feature-box-row" style="position: relative;">
+	<div class="bg-shape-box1">	
+		<div class="bg-shape-inner-container">
+			<img src="assets/background/blue-dot.svg" class="bg-shapes bd1" />
+			<img src="assets/background/green-triangle.svg" class="bg-shapes gt1" />
+		</div>
+	</div>
+	<div class="item1">
+		<div class="extra-margin" style="max-width: 520px;">
+			<img width="100px" src="assets/icons/happy.svg" class="circle-shadow">
+			<h2 class="default">Perfect for connecting with your customers</h2>
+			<p class="default">Let our design team help you put the finishing touches on your very own custom built web or mobile application.</p>
+			<div style="margin-top: 40px">
+				<p style="font-weight: bolder;"><a class="text-link on-white">Learn More >></a></p>
+			</div>
+		</div>
+	</div>
+	<div class="item2">
+		<div class="feature-boxes extra-margin">
+			<div class="feature-box box1">
+				<img width="75px" src="assets/icons/account-multiple.svg">
+				<h4 style="margin:6px 0px">Team Apps</h4>
+				<p>Build custom tools to improve your team's efficiency.</p>		
+			</div>
+			<div class="feature-box box2">
+				<img width="75px" src="assets/icons/swap-horizontal.svg">
+				<h4 style="margin:6px 0px">Service Apps</h4>
+				<p>Applications to best service your unique customers.</p>	
+			</div>
+			<div class="feature-box box3">
+				<img width="75px" src="assets/icons/cards-outline.svg">
+				<h4 style="margin:6px 0px">Tracking Apps</h4>
+				<p>Track all your key data in one custom app the way you want it.</p>	
+			</div>
+			<div class="feature-box box4">
+				<img width="75px" src="assets/icons/chart-tree.svg">
+				<h4 style="margin:6px 0px">Web Apps</h4>
+				<p>Back-end software for customers or staff, beyond any website.</p>	
+			</div>	
+		</div>		
+	</div>	
+</div>
+<div class="bg-banner2">
+	<div class="bg-shape-box2">	
+		<div class="bg-shape-inner-container">
+			<img src="assets/background/green-dot.svg" class="bg-shapes gd1" />
+			<img src="assets/background/green-triangle.svg" class="bg-shapes gt2" />
+		</div>
+	</div>
+	<div class="grid-container hero-banner">
+		<div class="item1 reverse-order">
+			<div class="phone-feature-container">
+				<img src="assets/background/blue-dot-array.svg" class="bg-dots-blue-video" />
+				<video class="phone-feature-video" autoplay muted>
+				  <source src="assets/webm/phone-feature.webm" type="video/webm">
+				  <source src="assets/png/phone-feature.png" type="image/png">
+				</video>		
+			</div>
+		</div>
+		<div class="item2 reverse-order">
+			<div class="extra-margin" style="max-width: 520px;">
+				<img width="100px" src="assets/icons/target.svg" class="circle-shadow">
+				<h2 class="default">Optimal user experience for best performance</h2>
+				<p class="default">Users should be able to use your apps without explanation, together we will optimise your customers' user experience.</p>
+				<div style="margin-top: 40px">
+					<p style="font-weight: bolder;"><a class="text-link on-white">Find out More >></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="center-headings extra-margin">
+	<h5 class="default">How we do it</h5>
+	<h3 class="default">Simple Development Process</h3>
+</div>
+<div class="cards-container">
+	<div class="feature-cards card1">
+		<img width="75px" src="assets/icons/brush-variant.svg">
+		<h4 style="margin:6px 0px">1. Design</h4>
+		<p>The first phase includes finalizing all the features, screen layouts, buttons and any other app requirements.</p>
+		<p>We will provide you with a design prototype which will be the basis for your app.</p>
+	</div>
+	<div class="feature-cards card2">
+		<img width="75px" src="assets/icons/cog.svg">
+		<h4 style="margin:6px 0px">2. Develop</h4>
+		<p>The next phase starts building the app itself, providing you with regular progress updates and ensuring reasonable timelines for deliverables are met. This phase can also include setting up any other servers or hardware required.</p>
+	</div>
+	<div class="feature-cards card3">	
+		<img width="75px" src="assets/icons/cloud-upload.svg">
+		<h4 style="margin:6px 0px">3. Deploy</h4>
+		<p>Lastly we will deploy your app, either to your own servers or onto the respective app stores to make sure your customers are able to use your app to the fullest.</p>
+		<p>Ongoing maintenance services are available.</p>
+	</div>
+</div>
+<div class="green-bar">
+	<img src="assets/background/bg-triangles.svg" class="bg-triangles" />	
+	<div class="sample-app-banner">
+		<div class="app-col1" style="max-width: 520px;">
+			<h5 class="default white">Try it today</h5>
+			<h3 class="default white">Download our Sample App to Experience it Yourself</h3>
+			<p class="default white">Responsively designed for mobile devices, Easy PDF Signer is a simple document management app that tracks document signatures, signature requests and much more.</p>
+			<a href="https://easypdfsigner.ca/" target="_blank">
+				<div class="white-button" style="margin-top: 40px">
+					<p>Visit Site</p>
+				</div>
+			</a>
+		</div>
+		<div class="app-col2" style="position: relative;">
+			<video class="bg-dots-video" loop autoplay muted>
+			  <source src="assets/webm/bg-dots.webm" type="video/webm">
+			</video>
+			<video class="phone-feature-video" autoplay muted>
+			  <source src="assets/webm/phones-feature.webm" type="video/webm">
+			  <source src="assets/png/phones-feature.png" type="image/png">
+			</video>
+			
+		</div>	
+	</div>
+</div>
+<div class="footer-cta">
+	<div class="footer-cta-container">
+		<div class="footer-cta-col1">
+			<h3 class="default white">Ready to get started?</h3>
+			<p class="default white">Schedule your free consultation to see how we can best help make your dream app into a reality.</p>
+		</div>
+		<div class="footer-cta-col2">
+			<div class="blue-button" onclick="showOverlay()">
+				<p>Free Consult</p>
+			</div>		
+		</div>	
+	</div>
+</div>
+<div class="footer">
+	<div class="footer-container">
+		<div class="footer-col1">
+			<img src="assets/logo/easy-apps-logo.svg" width="300px">
+			<p class="default darkGrey footer-copy-text">
+				&copy; A.A.S. Development Studios Ltd. 2020				
+				<?php echo "&copy; A.A.S. Development Studios Ltd. " . date("Y"); ?>
+			</p>
+		</div>		
+		<div class="footer-col2">
+			<h6 class="default white">Download</h6>
+			<p><a href="https://easypdfsigner.ca/" target="_blank" class="darkGrey footer-link">Easy PDF Signer</a></p>
+			<p class="darkGrey"><a class="footer-link">Easy Todo</a></p>
+			<p class="darkGrey"><a class="footer-link">Buginator</a></p>
+		</div>
+		<div class="footer-col3">
+			<h6 class="default white">Company</h6>
+			<p class="darkGrey"><a class="footer-link">About</a></p>
+			<p class="darkGrey"><a class="footer-link">Contact</a></p>
+			<p class="darkGrey"><a class="footer-link">Privacy Policy</a></p>
+		</div>
+		<div class="footer-col4">
+			<h6 class="default white">Social</h6>
+			<div style="display:inline-flex;">
+				<img src="assets/icons/facebook.svg" width="50px" class="social-link" />
+				<img src="assets/icons/linkedin.svg" width="50px" class="social-link" />
+			</div>
+		</div>
+	</div>
+	
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+
+/***********************************************/
+/************  Banner Animations  **************/
+/***********************************************/
+
+.bg-banner {
+	animation-name: hero-banner;		
+	animation-delay: 0.5s;	
+	animation-duration: 1.5s;		
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes hero-banner {
+	from {opacity: 0; }
+	to {opacity: 1; }
+}
+
+.video-banner-ani {	
+	animation-name: hero-phone;
+	animation-duration: 2s;	
+	animation-delay: 1s;	
+	animation-fill-mode: backwards;
+	animation-timing-function: ease-out;
+}
+
+@keyframes hero-phone {
+	from {opacity: 0; margin-left: 250px; margin-right: -250px;}
+	to {opacity: 1; margin-left: 0px; margin-right: 0px;}
+}
+
+.apps-banner-ani {	
+	animation-name: apps-entrance;
+	animation-duration: 2s;
+	animation-fill-mode: backwards;
+	animation-timing-function: ease-out;
+}
+
+@keyframes apps-entrance {
+	from {opacity: 0; margin-top: 250px; margin-bottom: -250px;}
+	to {opacity: 1; margin-top: 0px; margin-bottom: 0px;}
+}
+
+.bg-tri-ani {	
+	animation-name: bg-triangles-entrance;
+	animation-delay: 1s;
+	animation-duration: 2s;
+	animation-fill-mode: backwards;
+	animation-timing-function: ease-out;
+}
+
+@keyframes bg-triangles-entrance {
+	0% {opacity: 0; left: 250px;}
+	95% {opacity: 1; left: 148px;}
+	100% {opacity: 1; left: 150px;}
+}
+
+.bg-dots-blue-ani {
+	animation-name: bg-dots-blue-entrance;
+	animation-delay: 2s;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;	
+	animation-direction: alternate;
+}
+
+@keyframes bg-dots-blue-entrance {
+	from {opacity: 0; }
+	to {opacity: 0.6; }
+}
+
+
+/***********************************************/
+/**************  Box Animations  ***************/
+/***********************************************/
+
+.feature-box {	
+	animation-duration: 1s;	
+	animation-timing-function: ease-in;
+	animation-fill-mode: backwards;
+}
+
+.box1-ani {	
+	animation-name: box-entrance;
+	animation-delay: 0s;
+}
+
+.box2-ani {	
+	animation-name: box-entrance;
+	animation-delay: 0.5s;
+}
+
+.box3-ani {	
+	animation-name: box-entrance;
+	animation-delay: 1s;
+}
+
+.box4-ani {	
+	animation-name: box-entrance;
+	animation-delay: 1.5s;
+}
+
+@keyframes box-entrance {
+	from { box-shadow: 1px 1px 1px 3px rgb(0 0 0 / 0%); opacity: 0; }
+	to { box-shadow: 1px 1px 31px 3px rgb(0 0 0 / 12%); opacity: 1;  }	
+}
+
+
+/***********************************************/
+/**************  Card Animations  **************/
+/***********************************************/
+
+.feature-cards {
+	animation-duration: 1s;	
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: backwards;
+}
+
+.card1-ani {	
+	animation-name: card-entrance;	
+	animation-delay: 0s;
+}
+
+.card2-ani {	
+	animation-name: card-entrance;
+	animation-delay: 0.5s;
+}
+
+.card3-ani {	
+	animation-name: card-entrance;
+	animation-delay: 1s;
+}
+
+@keyframes card-entrance {
+	from { 
+		box-shadow: 1px 1px 1px 3px rgb(0 0 0 / 0%); 
+		opacity: 0;
+		margin: 60px auto -60px;
+	}
+	to { 
+		box-shadow: 1px 1px 10px 3px rgb(0 0 0 / 9%);
+		opacity: 1;
+		margin: 0px auto 0px;
+	}	
+}
+
+
+
+/***********************************************/
+/***************  BG Animations  ***************/
+/***********************************************/
+
+.bg-dots-video {
+	animation-name: bg-dots-banner-ani;		
+	animation-delay: 2s;	
+	animation-duration: 2s;		
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+}
+
+@keyframes bg-dots-banner-ani {
+	from {opacity: 0; }
+	to {opacity: 1; }
+}
+
+.hero-bgwm-ani {
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+	animation-name: bgwm-animation;
+	animation-delay: 3s;
+	animation-duration: 8s;	
+}
+
+
+.bg-shapes {
+	opacity: 1;
+	transition: opacity 0.6s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+}
+
+.bg-shapes:hover {
+	opacity: 0;
+}
+
+.bd1 {	
+	width: 10px;
+	top: 5px;
+	left: 6px;
+	animation-name: dot1-animation;
+	animation-duration: 4s;	
+}
+
+@keyframes dot1-animation {
+	from { width: 10px; left: 6px; top: 5px; }
+	to { width: 12px; left: 20px; top: 16px; }
+}
+
+.gt1 {
+	width: 10px;
+	top: 25px;
+	left: 45px;
+	animation-name: gt1-animation;
+	animation-duration: 4s;
+}
+
+@keyframes gt1-animation {
+	from { width: 10px; left: 45px; top: 25px; }
+	to { width: 12px; left: 50px; top: 15px; }
+}
+
+.gd1 {	
+	width: 13px;
+	top: 5px;
+	left: 80.5px;
+	animation-name: dot2-animation;
+	animation-duration: 6s;	
+}
+
+@keyframes dot2-animation {
+	from { width: 10px; left: 60px; top: 5px; }
+	to { width: 12px; left: 80px; top: 26px; }
+}
+
+.gt2 {
+	width: 10px;
+	top: 38px;
+	left: 86px;
+	animation-name: gt2-animation;
+	animation-duration: 8s;
+}
+
+@keyframes gt2-animation {
+	from { width: 13px; right: 86px; top: 28px; }
+	to { width: 16px; right: 95px; top: 57px; }
+}
