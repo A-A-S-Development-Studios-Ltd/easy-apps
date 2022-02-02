@@ -25,12 +25,7 @@ component  output="false"{
 			from="noreply@easypdfsigner.ca",
 			to="#to#",
 			subject="#subject#",
-			type="html",
-			server="email-smtp.ca-central-1.amazonaws.com",
-			username = "AKIA4L2J4UHAIOPNQQ2S",
-			password="BGV+7zK1qXdKotpZKBPSGM75B8G2naQj+RF4I1DWpUIF",
-			port=587,
-			usetls=true){
+			type="html"){
 				writeOutput(body);
 			}
 		}
