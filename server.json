@@ -1,0 +1,17 @@
+{
+    "name":"easy-apps.ca",
+    "openBrowserURL":"http://dev.easy-apps.ca:3000/",
+    "web":{
+        "http":{
+            "port":"3000"
+        },
+        "host":"dev.easy-apps.ca"
+    },
+    "app":{
+        "cfengine":"lucee@5.3.8.206"
+    },
+    "jvm":{
+        "args":"-Duser.timezone\\=UTC",
+        "heapSize":"2048"
+    }
+}
