@@ -50,27 +50,38 @@
 <div id="pop-window" class="pop-window-ani">
 	<div>
 		<div id="pop-banner">
-			<h4 class="white" style="margin: 10px;">Schedule your free consultation</h4>
+			<h4 class="white" style="margin: 10px;"><span id="pop-title">Schedule your free consultation</span></h4>
 		</div>	
 		<div class="pop-content">
-			<p>This 15m meeting will explain more details about the app development process, applicable contracts and answer any other questions.</p>
-			<p><b>Fill out the form below to get started.</b></p>
-			<form method="post" action="contact-form.php">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="tname" placeholder="Your name..">
+			<div id="pop-form">
+				<p>This 15m meeting will explain more details about the app development process, applicable contracts and answer any other questions.</p>
+				<p><b>Fill out the form below to get started.</b></p>
+				<form>
+					<label for="name" id="name-label">Name:</label>
+					<input type="text" id="name" name="name" placeholder="Your name..">
 
-				<label for="contact">Phone / Email:</label>
-				<input type="text" id="contact" name="contact" placeholder="Your contact info..">
-				
-				<div class="pop-actions">
-					<div>
-						<input type="submit" value="Submit">
-					</div>
-					<div class="pop-close">
-						<span onclick="closeOverlay()">Close</span>
+					<label for="email" id="email-label">Email:</label>
+					<input type="text" id="email" name="email" placeholder="Your contact info..">
+					
+					<input type="hidden" name="message" value="No Message">
+					
+					<div class="pop-actions">
+						<div>
+							<input type="submit" value="Submit">
+						</div>
+						<div class="pop-close">
+							<span onclick="closeOverlay()">Close</span>
+						</div>			
 					</div>			
-				</div>			
-			</form>
+				</form>
+			</div>
+			<div id="pop-success" class="displayNone">
+				<p><b>Thank you for contacting us.</b></p>
+				<p>A member from our client success team will reach out to you shortly.</p>	
+				<div class="blue-button" onclick="closeOverlay()" style="position: absolute; bottom: 40px; right: 40px;">
+					<p>Close</p>
+				</div>					
+			</div>
 		</div>
 	</div>
 </div>
