@@ -1,0 +1,9 @@
+# ignore all mac folder settings
+.DS_Store
+
+#ignore all VSCode folders and sublime worspaces
+.vscode/
+.vs/
+*.sublime-workspace
+*.code-workspace
+*.sublime-project
