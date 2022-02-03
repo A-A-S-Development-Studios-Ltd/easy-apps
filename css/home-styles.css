@@ -240,14 +240,6 @@
 	position: relative;
 }
 
-.bg-triangles {
-	position: absolute;
-	top: 0px;
-	left: 150px;
-	width: 350px;	
-    max-width: 50%;
-}
-
 .sample-app-banner {
 	display: grid;
 	grid-gap: 2rem;

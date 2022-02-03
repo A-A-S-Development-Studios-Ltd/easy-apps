@@ -20,7 +20,7 @@
 	</div>
 	<div id="menu-links">
 		<ul>
-			<li>About Us</li>
+			<a href="about.html"><li>About Us</li></a>
 			<li>Services</li>
 			<li>Pricing</li>
 			<li>Contact</li>
@@ -40,7 +40,7 @@
 <div id="mobile-menu" class="mobile-menu-ani">
 	<ul>
 		<li style="color: #0e76bc;"  onclick="showOverlay()">Free Consult</li>
-		<li>About Us</li>
+		<a href="about.html"><li>About Us</li></a>
 		<li>Services</li>
 		<li>Pricing</li>
 		<li>Contact</li>
@@ -58,10 +58,10 @@
 				<p><b>Fill out the form below to get started.</b></p>
 				<form>
 					<label for="name" id="name-label">Name:</label>
-					<input type="text" id="name" name="name" placeholder="Your name..">
+					<input type="text" id="name" name="name" placeholder="Your name.." required>
 
 					<label for="email" id="email-label">Email:</label>
-					<input type="text" id="email" name="email" placeholder="Your contact info..">
+					<input type="text" id="email" name="email" placeholder="Your contact info.." required>
 					
 					<input type="hidden" name="message" value="No Message">
 					
@@ -281,6 +281,7 @@
 	</div>
 	
 </div>
-<script src="scripts.js"></script>
+<script src="/scripts/main-scripts.js"></script>
+<script src="/scripts/home-script.js"></script>
 </body>
 </html>

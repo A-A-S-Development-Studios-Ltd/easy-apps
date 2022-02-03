@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Easy Apps | Home</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/global-styles.css">	
+	<link rel="stylesheet" href="css/global-responsive-styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.svg">
+</head>
+<body style="margin: 0; padding: 0">
+
+<div id="menu-bar">
+	<div style="text-align: center;">
+		<a href="home.html">
+			<img src="assets/logo/easy-apps-logo.svg" id="menu-logo" />	
+		</a>
+	</div>
+	<div id="menu-links">
+		<ul>
+			<li class="active-link">About Us</li>
+			<li>Services</li>
+			<li>Pricing</li>
+			<li>Contact</li>
+		</ul>
+	</div>
+	<div id="menu-cta">
+		<div class="blue-button" onclick="showOverlay()">
+			<p>Free Consult</p>
+		</div>
+	</div>	
+	<div id="menu-mobile-btn">
+		<div class="menu-button" onclick="showMenu()">
+			<img src="assets/icons/menu-icon.svg" id="menu-icon" />
+		</div>
+	</div>	
+</div>
+<div id="mobile-menu" class="mobile-menu-ani">
+	<ul>
+		<li style="color: #0e76bc;"  onclick="showOverlay()">Free Consult</li>
+		<li class="active-link">About Us</li>
+		<li>Services</li>
+		<li>Pricing</li>
+		<li>Contact</li>
+	</ul>
+</div>
+<div id="menu-overlay" class="mobile-menu-ani" onclick="showMenu()"></div>
+<div id="pop-window" class="pop-window-ani">
+	<div>
+		<div id="pop-banner">
+			<h4 class="white" style="margin: 10px;"><span id="pop-title">Schedule your free consultation</span></h4>
+		</div>	
+		<div class="pop-content">
+			<div id="pop-form">
+				<p>This 15m meeting will explain more details about the app development process, applicable contracts and answer any other questions.</p>
+				<p><b>Fill out the form below to get started.</b></p>
+				<form>
+					<label for="name" id="name-label">Name:</label>
+					<input type="text" id="name" name="name" placeholder="Your name.." required>
+
+					<label for="email" id="email-label">Email:</label>
+					<input type="text" id="email" name="email" placeholder="Your contact info.." required>
+					
+					<input type="hidden" name="message" value="No Message">
+					
+					<div class="pop-actions">
+						<div>
+							<input type="submit" value="Submit">
+						</div>
+						<div class="pop-close">
+							<span onclick="closeOverlay()">Close</span>
+						</div>			
+					</div>			
+				</form>
+			</div>
+			<div id="pop-success" class="displayNone">
+				<p><b>Thank you for contacting us.</b></p>
+				<p>A member from our client success team will reach out to you shortly.</p>	
+				<div class="blue-button" onclick="closeOverlay()" style="position: absolute; bottom: 40px; right: 40px;">
+					<p>Close</p>
+				</div>					
+			</div>
+		</div>
+	</div>
+</div>
+<div id="full-screen-overlay" class="fs-overlay-ani" onclick="closeOverlay()"></div>
+
+<div class="green-header-bar entr-ani">
+	<img src="assets/background/bg-triangles.svg" class="bg-triangles" />	
+	<div class="global-container header-text-container">
+		<h5 class="default white">Apps, The Easy Way</h5>
+		<h3 class="default white">Ideas into Inventions</h3>
+	</div>
+</div>
+<div class="feature-video">
+	<video class="" autoplay loop muted>
+	  <source src="assets/webm/bg-dots2.webm" type="video/webm">
+	</video>
+</div>
+<div class="global-container single-col-container entr-ani">
+	<div class="single-col1">
+	 <div class="img-container">
+		<img class="hero-icon icon1" src="assets/icons/cloud-upload.svg">
+		<img class="hero-icon icon2" src="assets/icons/cog.svg">
+		<img class="hero-icon icon3" width="55px" src="assets/icons/brush-variant.svg">
+		<img src="assets/background/blue-dot.svg" class="hero-shape bd1" />
+		<img src="assets/background/green-triangle.svg" class="hero-shape gt1" />
+	 </div>
+	 <h1 class="default">Unique App Creation</h1>
+	 <p>Each business has its own unique way of engaging their customers, and providing their customers with quality service, and excellence in their craft -- Easy Apps does just that. Our expertise is in technology and digital services and our mission is to help any business by creating whatever digital tools they need.</p>
+	 <p>The process required to evaluate and determine the best possible technical specifications for each unique app or software we develop is detailed and involved, but the outcome is always to create exactly what our customers need. With our ample expertise on app development we still know that the best app is always going to include a detailed development process. Our process uses three main phases which will ensure that all the appropriate questions get answered before the development begins, ensuring greater efficiency during that phase.</p>
+	 <p>To protect our customers ideas and intellectual property, our agreements start with an NDA and clear contract outlining our responsibilities as your new app developers.</p>
+	 <p>&nbsp;</p>
+	 <p style="font-weight: bolder;"><a class="text-link" onclick="showOverlay()">Get Started >></a></p>
+	</div>
+</div>
+
+<div class="global-container two-col-container entr-ani">
+	<div class="two-col1">
+		<div class="feature-element">
+			<img src="assets/icons/brush-variant.svg" width="80px"/>		
+			<p><span class="feature-header">Phase 1.</span><br/>
+			Design</p>
+		</div>
+	</div>
+	<div class="two-col2">
+		<p>Our journey starts by narrowing down exactly what the app needs to do and specifics for how it will be used. This includes meetings where we discuss and list all the features, screen layouts, main functions and many other specific app requirements.</p>
+		<p>Once this has all been listed we will start designing a visual mockup or prototype of your app, allowing you to see how your app should look once it is finished. This can include images of each screen with some sample content on it, or videos showing the app being used and the expected outcomes with each action. Often after seeing the prototype in action, it can inspire new functions or layouts which we would then adjust the design and development scope to include them.</p>
+	</div>
+</div>
+<div class="global-container two-col-container reversed entr-ani">
+	<div class="two-col1">
+		<div class="feature-element">
+			<img src="assets/icons/cog.svg" width="80px"/>		
+			<p><span class="feature-header">Phase 2.</span><br/>
+			Develop</p>
+		</div>
+	</div>
+	<div class="two-col2">
+		<p>With all the details we need, now we start building the app itself. This process can be timely, depending of course on the complexity of your app, so we provide you with regular progress updates and ensure reasonable timelines for deliverables are met. You will know what we are working on and how long each step took with detailed development logs and weekly updates.</p>
+		<p>This phase can also include setting up any other servers or hardware required, this can often include working directly with you to ensure that these services, and related credentials are securely set up so you will retain full administrative access over the accounts related to your app.</p>
+	</div>
+</div>
+<div class="global-container two-col-container entr-ani">
+	<div class="two-col1">
+		<div class="feature-element">
+			<img src="assets/icons/cloud-upload.svg" width="80px"/>		
+			<p><span class="feature-header">Phase 3.</span><br/>
+			Deploy</p>
+		</div>
+	</div>
+	<div class="two-col2">
+		<p>Lastly we will deploy your app so it is fully available for beta testing by you or your team to ensure everything is running smoothly. Once everything is completed we make sure your app is published and available for commercial use.</p>
+		<p>After this ship has sailed and your app is deployed, ongoing maintenance services are often required to keep your servers secure, your apps compatible with the next generation of devices, or evolving platforms requiring additions to maintain compliance with best practises for security and customer protection. We offer services to help keep you running long into the future.</p>
+	</div>
+</div>
+
+<div class="footer-cta">
+	<div class="footer-cta-container">
+		<div class="footer-cta-col1">
+			<h3 class="default white">Ready to get started?</h3>
+			<p class="default white">Schedule your free consultation to see how we can best help make your dream app into a reality.</p>
+		</div>
+		<div class="footer-cta-col2">
+			<div class="blue-button" onclick="showOverlay()">
+				<p>Free Consult</p>
+			</div>		
+		</div>	
+	</div>
+</div>
+<div class="footer">
+	<div class="footer-container">
+		<div class="footer-col1">
+			<img src="assets/logo/easy-apps-logo.svg" width="300px">
+			<p class="default darkGrey footer-copy-text">
+				&copy; A.A.S. Development Studios Ltd. 2020				
+				<?php echo "&copy; A.A.S. Development Studios Ltd. " . date("Y"); ?>
+			</p>
+		</div>		
+		<div class="footer-col2">
+			<h6 class="default white">Download</h6>
+			<p><a href="https://easypdfsigner.ca/" target="_blank" class="darkGrey footer-link">Easy PDF Signer</a></p>
+			<p class="darkGrey"><a class="footer-link">Easy Todo</a></p>
+			<p class="darkGrey"><a class="footer-link">Buginator</a></p>
+		</div>
+		<div class="footer-col3">
+			<h6 class="default white">Company</h6>
+			<p class="darkGrey"><a class="footer-link">About</a></p>
+			<p class="darkGrey"><a class="footer-link">Contact</a></p>
+			<p class="darkGrey"><a class="footer-link">Privacy Policy</a></p>
+		</div>
+		<div class="footer-col4">
+			<h6 class="default white">Social</h6>
+			<div style="display:inline-flex;">
+				<img src="assets/icons/facebook.svg" width="50px" class="social-link" />
+				<img src="assets/icons/linkedin.svg" width="50px" class="social-link" />
+			</div>
+		</div>
+	</div>
+	
+</div>
+<script src="/scripts/main-scripts.js"></script>
+<script src="/scripts/about-script.js"></script>
+</body>
+</html>
