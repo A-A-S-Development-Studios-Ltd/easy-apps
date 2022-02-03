@@ -138,6 +138,9 @@ a {
 	margin: 50px;
 }
 
+.center-headings {
+	text-align: center; 
+}
 
 
 /***********************************************/
@@ -211,16 +214,27 @@ a {
     flex-direction: column;
     justify-content: center;
 	padding: 20px;
-	transition: box-shadow 1.5s;
+	background: transparent;
+	transition: box-shadow 1.5s, background 1.5s;
 }
 
 .feature-element:hover {
 	box-shadow: 1px 1px 31px 3px rgb(0 0 0 / 12%);
+	background: #FFF;
 }
 
 .feature-header{
 	font-weight: 900;
 	font-size: 2em;
+}
+
+.feature-bg-shape {
+	float: right;
+    position: absolute;
+    z-index: -1;
+    max-width: 60%;
+    right: 0;
+    opacity: 0.5;
 }
 
 /***********************************************/
