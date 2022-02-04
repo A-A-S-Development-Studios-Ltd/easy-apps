@@ -165,6 +165,24 @@
 	100% { width: 85px; margin: -5px; }
 }
 
+#mask-circle {
+	animation: mask-circle-ani 5s ease-in 0s infinite normal both;
+}
+
+@keyframes mask-circle-ani {
+	from { width: 120px; left: 0px; top: -250px; }
+	to { width: 800px; left: -400px; top: -250px; }
+}
+
+#mask-cutout { 	
+	animation: mask-cutout-ani 5s ease-in 0s infinite normal both;
+}
+
+@keyframes mask-cutout-ani {
+	from { top: -80px; }
+	to { top: 750px; }
+}
+
 .hero-shape {
 	animation-direction: alternate;
 	animation-timing-function: ease-in-out;

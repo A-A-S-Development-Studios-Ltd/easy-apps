@@ -52,7 +52,9 @@
 .bg-shape-box1 { top: 20px; bottom: auto; left: auto; right: 20px; }
 .bg-shape-box2 { top: 40px; right: 90px;}
 
-
+.feature-animation div { width: 90px; }
+	
+	
 
 /***********************************************/
 /***************  Small Devices  ***************/
@@ -85,6 +87,8 @@
 
 @media only screen and (min-width: 768px) {  
 /* Landscape tablets, 768px and up */
+
+	.feature-animation div { width: 108px; }
 		
 }
 
