@@ -4,11 +4,12 @@
 	<title>Easy Apps | Home</title>	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/global-styles.css">	
+	<link rel="stylesheet" href="css/global-animations.css">
 	<link rel="stylesheet" href="css/global-responsive-styles.css">
 	<link rel="icon" type="image/x-icon" href="favicon.svg">
 </head>
 <body style="margin: 0; padding: 0">
-
+<!-- Navigation Menu -->
 <div id="menu-bar">
 	<div style="text-align: center;">
 		<a href="home.html">
@@ -34,6 +35,7 @@
 		</div>
 	</div>	
 </div>
+<!-- Mobile Menu -->
 <div id="mobile-menu" class="mobile-menu-ani">
 	<ul>
 		<li style="color: #0e76bc;"  onclick="showOverlay()">Free Consult</li>
@@ -43,7 +45,9 @@
 		<li>Contact</li>
 	</ul>
 </div>
+<!-- Mobile Menu Overlay -->
 <div id="menu-overlay" class="mobile-menu-ani" onclick="showMenu()"></div>
+<!-- Popup Window -->
 <div id="pop-window" class="pop-window-ani">
 	<div>
 		<div id="pop-banner">
@@ -82,8 +86,9 @@
 		</div>
 	</div>
 </div>
+<!-- Popup Overlay -->
 <div id="full-screen-overlay" class="fs-overlay-ani" onclick="closeOverlay()"></div>
-
+<!-- Page Header -->
 <div class="green-header-bar entr-ani">
 	<img src="assets/background/bg-triangles.svg" class="bg-triangles" />	
 	<div class="global-container header-text-container">
@@ -91,17 +96,19 @@
 		<h3 class="default white">Advanced App Expertise</h3>
 	</div>
 </div>
+<!-- Page Feature Video -->
 <div class="feature-video">
 	<video class="" autoplay loop muted>
 	  <source src="assets/webm/bg-dots2.webm" type="video/webm">
 	</video>
 </div>
+<!-- Page Content Row -->
 <div class="global-container single-col-container entr-ani">
 	<div class="single-col1">
 	 <div class="img-container">
-		<img class="hero-icon icon1" src="assets/icons/cloud-upload.svg">
-		<img class="hero-icon icon2" src="assets/icons/cog.svg">
-		<img class="hero-icon icon3" width="55px" src="assets/icons/brush-variant.svg">
+		<img class="hero-icon icon1 cloud-fade" src="assets/icons/chart-tree.svg">
+		<img class="hero-icon icon2 arrow-move" src="assets/icons/swap-horizontal.svg">
+		<img class="hero-icon icon3 brush-sweep" width="55px" src="assets/icons/cards-outline.svg">
 		<img src="assets/background/blue-dot.svg" class="hero-shape bd1" />
 		<img src="assets/background/green-triangle.svg" class="hero-shape gt1" />
 	 </div>
@@ -113,14 +120,25 @@
 	 <p style="font-weight: bolder;"><a class="text-link" onclick="showOverlay()">Get Started >></a></p>
 	</div>
 </div>
+<!-- Page Content Row -->
 <div class="center-headings extra-margin">
 	<h5 class="default">Our Services</h5>
 	<h3 class="default">Application Development</h3>
 </div>
+<!-- Page BG Dots Box -->
+<div style="position: relative;">
+	<div class="bg-shape-box1">	
+		<div class="bg-shape-inner-container">
+			<img src="assets/background/blue-dot.svg" class="bg-shapes bd1" />
+			<img src="assets/background/green-triangle.svg" class="bg-shapes gt1" />
+		</div>
+	</div>
+</div>
+<!-- Page Content Row -->
 <div class="global-container two-col-container entr-ani">
 	<div class="two-col1">
 		<div class="feature-element">
-			<img src="assets/icons/cards-outline.svg" width="80px"/>		
+			<img class="brush-sweep" src="assets/icons/cards-outline.svg" width="75px"/>		
 			<p><span class="feature-header">Mobile</span><br/>
 			App Development</p>
 		</div>
@@ -131,11 +149,22 @@
 		<p>These types of apps could be anything from online menus, or ordering services, tracking of data analytic monitoring tools, team communication or social apps, whatever your business needs, we will be able to develop it.</p>
 	</div>
 </div>
+<!-- Page BG Shape -->
 <img src="assets/background/bg-shape.svg" class="feature-bg-shape" />
+<!-- Page BG Dots Box -->
+<div style="position: relative;">
+	<div class="bg-shape-box2">	
+		<div class="bg-shape-inner-container">
+			<img src="assets/background/green-dot.svg" class="bg-shapes gd1" />
+			<img src="assets/background/green-triangle.svg" class="bg-shapes gt2" />
+		</div>
+	</div>
+</div>
+<!-- Page Content Row -->
 <div class="global-container two-col-container reversed entr-ani">
 	<div class="two-col1">
 		<div class="feature-element">
-			<img src="assets/icons/chart-tree.svg" width="80px"/>		
+			<img class="site-scale" src="assets/icons/chart-tree.svg" width="75px"/>		
 			<p><span class="feature-header">Website</span><br/>
 			Web Applications</p>
 		</div>
@@ -145,10 +174,11 @@
 		<p>Examples of popular web apps would include sites like Google, or Facebook, which are advanced programs that respond to your interactions with them. If this is the type of program you need, our skilled team can help with everything from the prototype to the finished running site.</p>
 	</div>
 </div>
+<!-- Page Content Row -->
 <div class="global-container two-col-container entr-ani">
 	<div class="two-col1">
 		<div class="feature-element">
-			<img src="assets/icons/swap-horizontal.svg" width="80px"/>		
+			<img class="arrow-move" src="assets/icons/swap-horizontal.svg" width="75px"/>		
 			<p><span class="feature-header">Ongoing</span><br/>
 			App Services</p>
 		</div>
@@ -158,7 +188,7 @@
 		<p>Our ongoing app services would evaluate the type and frequency of the maintenance you require then provide you with affordable options. If you have an existing software that needs help we would be able to evaluate and offer our best options to get it up to par again.</p>
 	</div>
 </div>
-
+<!-- Footer CTA -->
 <div class="footer-cta">
 	<div class="footer-cta-container">
 		<div class="footer-cta-col1">
@@ -172,13 +202,13 @@
 		</div>	
 	</div>
 </div>
+<!-- Footer -->
 <div class="footer">
 	<div class="footer-container">
 		<div class="footer-col1">
 			<img src="assets/logo/easy-apps-logo.svg" width="300px">
 			<p class="default darkGrey footer-copy-text">
-				&copy; A.A.S. Development Studios Ltd. 2020				
-				<?php echo "&copy; A.A.S. Development Studios Ltd. " . date("Y"); ?>
+				&copy; A.A.S. Development Studios Ltd. 2022
 			</p>
 		</div>		
 		<div class="footer-col2">
@@ -200,9 +230,9 @@
 				<img src="assets/icons/linkedin.svg" width="50px" class="social-link" />
 			</div>
 		</div>
-	</div>
-	
+	</div>	
 </div>
+<!-- Scripts -->
 <script src="/scripts/main-scripts.js"></script>
 <script src="/scripts/about-script.js"></script>
 </body>

@@ -3,7 +3,8 @@
 <head>
 	<title>Easy Apps | Home</title>	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/global-styles.css">	
+	<link rel="stylesheet" href="css/global-styles.css">
+	<link rel="stylesheet" href="css/global-animations.css">	
 	<link rel="stylesheet" href="css/global-responsive-styles.css">
 	<link rel="stylesheet" href="css/home-styles.css">
 	<link rel="stylesheet" href="css/home-responsive-styles.css">
@@ -11,7 +12,7 @@
 	<link rel="icon" type="image/x-icon" href="favicon.svg">
 </head>
 <body style="margin: 0; padding: 0">
-
+<!-- Navigation Menu -->
 <div id="menu-bar">
 	<div style="text-align: center;">
 		<a href="home.html">
@@ -37,6 +38,7 @@
 		</div>
 	</div>	
 </div>
+<!-- Mobile Menu -->
 <div id="mobile-menu" class="mobile-menu-ani">
 	<ul>
 		<li style="color: #0e76bc;"  onclick="showOverlay()">Free Consult</li>
@@ -46,7 +48,9 @@
 		<li>Contact</li>
 	</ul>
 </div>
+<!-- Mobile Menu Overlay -->
 <div id="menu-overlay" class="mobile-menu-ani" onclick="showMenu()"></div>
+<!-- Popup Window -->
 <div id="pop-window" class="pop-window-ani">
 	<div>
 		<div id="pop-banner">
@@ -85,7 +89,9 @@
 		</div>
 	</div>
 </div>
+<!-- Popup Overlay -->
 <div id="full-screen-overlay" class="fs-overlay-ani" onclick="closeOverlay()"></div>
+<!-- Page Header -->
 <div class="bg-banner">
 	<img src="assets/background/white-cover.svg" class="hero-bg-cover" />
 	<img src="assets/background/ea-logo-watermark.svg" class="hero-bg-watermark hero-bgwm-ani" />	
@@ -118,7 +124,8 @@
 		</div>
 	</div>
 </div>
-<div class="grid-container feature-box-row" style="position: relative;">
+<!-- Page Content Row -->
+<div class="grid-container feature-box-row entr-ani" style="position: relative;">
 	<div class="bg-shape-box1">	
 		<div class="bg-shape-inner-container">
 			<img src="assets/background/blue-dot.svg" class="bg-shapes bd1" />
@@ -138,28 +145,29 @@
 	<div class="item2">
 		<div class="feature-boxes extra-margin">
 			<div class="feature-box box1">
-				<img width="75px" src="assets/icons/account-multiple.svg">
+				<img class="cloud-fade" width="75px" src="assets/icons/account-multiple.svg">
 				<h4 style="margin:6px 0px">Team Apps</h4>
 				<p>Build custom tools to improve your team's efficiency.</p>		
 			</div>
 			<div class="feature-box box2">
-				<img width="75px" src="assets/icons/swap-horizontal.svg">
+				<img class="arrow-move" width="75px" src="assets/icons/swap-horizontal.svg">
 				<h4 style="margin:6px 0px">Service Apps</h4>
 				<p>Applications to best service your unique customers.</p>	
 			</div>
 			<div class="feature-box box3">
-				<img width="75px" src="assets/icons/cards-outline.svg">
+				<img class="brush-sweep" width="75px" src="assets/icons/cards-outline.svg">
 				<h4 style="margin:6px 0px">Tracking Apps</h4>
 				<p>Track all your key data in one custom app the way you want it.</p>	
 			</div>
 			<div class="feature-box box4">
-				<img width="75px" src="assets/icons/chart-tree.svg">
+				<img class="site-scale" width="75px" src="assets/icons/chart-tree.svg">
 				<h4 style="margin:6px 0px">Web Apps</h4>
 				<p>Back-end software for customers or staff, beyond any website.</p>	
 			</div>	
 		</div>		
 	</div>	
 </div>
+<!-- Page Content Row -->
 <div class="bg-banner2">
 	<div class="bg-shape-box2">	
 		<div class="bg-shape-inner-container">
@@ -183,35 +191,38 @@
 				<h2 class="default">Optimal user experience for best performance</h2>
 				<p class="default">Users should be able to use your apps without explanation, together we will optimise your customers' user experience.</p>
 				<div style="margin-top: 40px">
-					<p style="font-weight: bolder;"><a class="text-link on-white">Find out More >></a></p>
+					<p style="font-weight: bolder;"><a class="text-link on-white" onclick="showOverlay()">Get Started >></a></p>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+<!-- Page Content Row -->
 <div class="center-headings extra-margin">
 	<h5 class="default">How we do it</h5>
 	<h3 class="default">Simple Development Process</h3>
 </div>
+<!-- Page Content Row -->
 <div class="cards-container">
 	<div class="feature-cards card1">
-		<img width="75px" src="assets/icons/brush-variant.svg">
+		<img width="75px" class="brush-sweep" src="assets/icons/brush-variant.svg">
 		<h4 style="margin:6px 0px">1. Design</h4>
 		<p>The first phase includes finalizing all the features, screen layouts, buttons and any other app requirements.</p>
 		<p>We will provide you with a design prototype which will be the basis for your app.</p>
 	</div>
 	<div class="feature-cards card2">
-		<img width="75px" src="assets/icons/cog.svg">
+		<img width="75px" class="gear-spin" src="assets/icons/cog.svg">
 		<h4 style="margin:6px 0px">2. Develop</h4>
 		<p>The next phase starts building the app itself, providing you with regular progress updates and ensuring reasonable timelines for deliverables are met. This phase can also include setting up any other servers or hardware required.</p>
 	</div>
 	<div class="feature-cards card3">	
-		<img width="75px" src="assets/icons/cloud-upload.svg">
+		<img width="75px" class="cloud-fade" src="assets/icons/cloud-upload.svg">
 		<h4 style="margin:6px 0px">3. Deploy</h4>
 		<p>Lastly we will deploy your app, either to your own servers or onto the respective app stores to make sure your customers are able to use your app to the fullest.</p>
 		<p>Ongoing maintenance services are available.</p>
 	</div>
 </div>
+<!-- Page Content Row -->
 <div class="green-bar">
 	<img src="assets/background/bg-triangles.svg" class="bg-triangles" />	
 	<div class="sample-app-banner">
@@ -237,6 +248,7 @@
 		</div>	
 	</div>
 </div>
+<!-- Footer CTA -->
 <div class="footer-cta">
 	<div class="footer-cta-container">
 		<div class="footer-cta-col1">
@@ -250,13 +262,13 @@
 		</div>	
 	</div>
 </div>
+<!-- Footer -->
 <div class="footer">
 	<div class="footer-container">
 		<div class="footer-col1">
 			<img src="assets/logo/easy-apps-logo.svg" width="300px">
 			<p class="default darkGrey footer-copy-text">
-				&copy; A.A.S. Development Studios Ltd. 2020				
-				<?php echo "&copy; A.A.S. Development Studios Ltd. " . date("Y"); ?>
+				&copy; A.A.S. Development Studios Ltd. 2022
 			</p>
 		</div>		
 		<div class="footer-col2">
@@ -278,9 +290,9 @@
 				<img src="assets/icons/linkedin.svg" width="50px" class="social-link" />
 			</div>
 		</div>
-	</div>
-	
+	</div>	
 </div>
+<!-- Scripts -->
 <script src="/scripts/main-scripts.js"></script>
 <script src="/scripts/home-script.js"></script>
 </body>

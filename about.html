@@ -4,11 +4,12 @@
 	<title>Easy Apps | Home</title>	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/global-styles.css">	
+	<link rel="stylesheet" href="css/global-animations.css">
 	<link rel="stylesheet" href="css/global-responsive-styles.css">
 	<link rel="icon" type="image/x-icon" href="favicon.svg">
 </head>
 <body style="margin: 0; padding: 0">
-
+<!-- Navigation Menu -->
 <div id="menu-bar">
 	<div style="text-align: center;">
 		<a href="home.html">
@@ -34,6 +35,7 @@
 		</div>
 	</div>	
 </div>
+<!-- Mobile Menu -->
 <div id="mobile-menu" class="mobile-menu-ani">
 	<ul>
 		<li style="color: #0e76bc;"  onclick="showOverlay()">Free Consult</li>
@@ -43,7 +45,9 @@
 		<li>Contact</li>
 	</ul>
 </div>
+<!-- Mobile Menu Overlay -->
 <div id="menu-overlay" class="mobile-menu-ani" onclick="showMenu()"></div>
+<!-- Popup Window -->
 <div id="pop-window" class="pop-window-ani">
 	<div>
 		<div id="pop-banner">
@@ -82,8 +86,9 @@
 		</div>
 	</div>
 </div>
+<!-- Popup Overlay -->
 <div id="full-screen-overlay" class="fs-overlay-ani" onclick="closeOverlay()"></div>
-
+<!-- Page Header -->
 <div class="green-header-bar entr-ani">
 	<img src="assets/background/bg-triangles.svg" class="bg-triangles" />	
 	<div class="global-container header-text-container">
@@ -91,17 +96,19 @@
 		<h3 class="default white">Ideas into Inventions</h3>
 	</div>
 </div>
+<!-- Page Feature Video -->
 <div class="feature-video">
 	<video class="" autoplay loop muted>
 	  <source src="assets/webm/bg-dots2.webm" type="video/webm">
 	</video>
 </div>
+<!-- Page Content Row -->
 <div class="global-container single-col-container entr-ani">
 	<div class="single-col1">
 	 <div class="img-container">
-		<img class="hero-icon icon1" src="assets/icons/cloud-upload.svg">
-		<img class="hero-icon icon2" src="assets/icons/cog.svg">
-		<img class="hero-icon icon3" width="55px" src="assets/icons/brush-variant.svg">
+		<img class="hero-icon icon1 cloud-fade" src="assets/icons/cloud-upload.svg">
+		<img class="hero-icon icon2 gear-spin" src="assets/icons/cog.svg">
+		<img class="hero-icon icon3 brush-sweep" width="55px" src="assets/icons/brush-variant.svg">
 		<img src="assets/background/blue-dot.svg" class="hero-shape bd1" />
 		<img src="assets/background/green-triangle.svg" class="hero-shape gt1" />
 	 </div>
@@ -113,14 +120,25 @@
 	 <p style="font-weight: bolder;"><a class="text-link" onclick="showOverlay()">Get Started >></a></p>
 	</div>
 </div>
+<!-- Page Content Row -->
 <div class="center-headings extra-margin">
 	<h5 class="default">How we do it</h5>
 	<h3 class="default">Simple Development Process</h3>
 </div>
-<div class="global-container two-col-container entr-ani">
+<!-- Page BG Dots Box -->
+<div style="position: relative;">
+	<div class="bg-shape-box1">	
+		<div class="bg-shape-inner-container">
+			<img src="assets/background/blue-dot.svg" class="bg-shapes bd1" />
+			<img src="assets/background/green-triangle.svg" class="bg-shapes gt1" />
+		</div>
+	</div>
+</div>
+<!-- Page Content Row -->
+<div class="global-container two-col-container entr-ani" style="position: relative;">
 	<div class="two-col1">
 		<div class="feature-element">
-			<img src="assets/icons/brush-variant.svg" width="80px"/>		
+			<img class="brush-sweep" src="assets/icons/brush-variant.svg" width="75px"/>		
 			<p><span class="feature-header">Phase 1.</span><br/>
 			Design</p>
 		</div>
@@ -131,11 +149,22 @@
 		<p>Often after seeing the prototype in action, it can inspire new functions or layouts which we would then adjust the design and development scope to include them.</p>
 	</div>
 </div>
+<!-- Page BG Shape -->
 <img src="assets/background/bg-shape.svg" class="feature-bg-shape" />
-<div class="global-container two-col-container reversed entr-ani">
+<!-- Page BG Dots Box -->
+<div style="position: relative;">
+	<div class="bg-shape-box2">	
+		<div class="bg-shape-inner-container">
+			<img src="assets/background/green-dot.svg" class="bg-shapes gd1" />
+			<img src="assets/background/green-triangle.svg" class="bg-shapes gt2" />
+		</div>
+	</div>
+</div>
+<!-- Page Content Row -->
+<div class="global-container two-col-container reversed entr-ani">	
 	<div class="two-col1">
 		<div class="feature-element">
-			<img src="assets/icons/cog.svg" width="80px"/>		
+			<img class="gear-spin" src="assets/icons/cog.svg" width="75px"/>		
 			<p><span class="feature-header">Phase 2.</span><br/>
 			Develop</p>
 		</div>
@@ -149,7 +178,7 @@
 <div class="global-container two-col-container entr-ani">
 	<div class="two-col1">
 		<div class="feature-element">
-			<img src="assets/icons/cloud-upload.svg" width="80px"/>		
+			<img class="cloud-fade" src="assets/icons/cloud-upload.svg" width="75px"/>		
 			<p><span class="feature-header">Phase 3.</span><br/>
 			Deploy</p>
 		</div>
@@ -160,7 +189,7 @@
 		<p>We offer services to help keep you running long into the future.</p>
 	</div>
 </div>
-
+<!-- Footer CTA -->
 <div class="footer-cta">
 	<div class="footer-cta-container">
 		<div class="footer-cta-col1">
@@ -174,13 +203,13 @@
 		</div>	
 	</div>
 </div>
+<!-- Footer -->
 <div class="footer">
 	<div class="footer-container">
 		<div class="footer-col1">
 			<img src="assets/logo/easy-apps-logo.svg" width="300px">
 			<p class="default darkGrey footer-copy-text">
-				&copy; A.A.S. Development Studios Ltd. 2020				
-				<?php echo "&copy; A.A.S. Development Studios Ltd. " . date("Y"); ?>
+				&copy; A.A.S. Development Studios Ltd. 2022
 			</p>
 		</div>		
 		<div class="footer-col2">
@@ -202,9 +231,9 @@
 				<img src="assets/icons/linkedin.svg" width="50px" class="social-link" />
 			</div>
 		</div>
-	</div>
-	
+	</div>	
 </div>
+<!-- Scripts -->
 <script src="/scripts/main-scripts.js"></script>
 <script src="/scripts/about-script.js"></script>
 </body>

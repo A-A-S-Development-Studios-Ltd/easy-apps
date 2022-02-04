@@ -94,32 +94,6 @@
 	max-width: none !important;
 }
 
-.bg-shapes {
-	position: relative;
-}
-
-.bg-shape-box1 {
-	position: absolute;
-	bottom: 150px;
-	left: 25px;
-	width: 100px;
-	height: 100px;
-}
-
-.bg-shape-box2 {
-	position: absolute;
-	top: 15%;
-	right: 225px;
-	width: 100px;
-	height: 100px;
-}
-
-.bg-shape-inner-container {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-
 .bg-dots-blue-video {
 	position: absolute;
 	z-index: 0;	
@@ -144,7 +118,7 @@
 
 .feature-box {
 	box-shadow: 1px 1px 31px 3px rgb(0 0 0 / 12%);
-    border-radius: 5px;
+    border-radius: 9px;
     width: 210px;
     height: 210px;
     padding: 20px;
@@ -184,10 +158,6 @@
 /************  Cards Banner Styles  ************/
 /***********************************************/
 
-.center-headings {
-	text-align: center; 
-}
-
 .cards-container {
 	display: grid;
 	grid-gap: 4rem;
@@ -200,7 +170,7 @@
 .feature-cards {	
 	width: auto;
 	box-shadow: 1px 1px 10px 3px rgb(0 0 0 / 9%);
-	border-radius: 3px;
+	border-radius: 9px;
 	height: -webkit-fill-available;
 	transition: box-shadow 0.3s;
 	padding: 25px;	

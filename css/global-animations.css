@@ -1,0 +1,359 @@
+/*animation: name duration timing-function delay iteration-count direction fill-mode play-state;*/
+
+/***********************************************/
+/****************  Menu Styles  ****************/
+/***********************************************/
+
+.mobile-menu-ani {
+	animation-delay: 0s;
+	opacity: 0;
+	animation-duration: 0.6s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;	
+}
+
+.menu-open-ani {
+	animation-name: menu-ani;	
+}
+
+@keyframes menu-ani {	
+	0%   { height: 0px; }
+	1%   { opacity: 0; height: auto; }
+	100% { opacity: 1; height: auto; }
+}
+
+.menu-close-ani {
+	animation-name: menu-close-ani;
+}
+
+@keyframes menu-close-ani {
+	0%   { opacity: 1; height: auto; }
+	99%  { opacity: 0; height: auto; }
+	100% { height: 0px; }
+}
+
+.overlay-open-ani {
+	animation-name: overlay-ani;	
+}
+
+@keyframes overlay-ani {	
+	0%   { height: 0px; }
+	1%   { opacity: 0; height: 100vh; }
+	100% { opacity: 1; height: 100vh; }
+}
+
+.overlay-close-ani {
+	animation-name: overlay-close-ani;
+}
+
+@keyframes overlay-close-ani {
+	0%   { opacity: 1; height: 100vh; }
+	99%  { opacity: 0; height: 100vh; }
+	100% { height: 0px; }
+}
+
+
+
+/***********************************************/
+/***************  Footer Styles  ***************/
+/***********************************************/
+
+.footer-cta {
+	animation-name: footer-cta-animation;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+	animation-duration: 4s;	
+}
+
+@keyframes footer-cta-animation {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
+
+
+/***********************************************/
+/************  Page Header Styles  *************/
+/***********************************************/
+
+.bg-tri-ani {	
+	animation-name: bg-triangles-entrance;
+	animation-delay: 0.5s;
+	animation-duration: 2s;
+	animation-fill-mode: backwards;
+	animation-timing-function: ease-out;
+}
+
+@keyframes bg-triangles-entrance {
+	0% {opacity: 0; left: 250px;}
+	95% {opacity: 0.6; left: 148px;}
+	100% {opacity: 0.6; left: 150px;}
+}
+
+
+
+/***********************************************/
+/************  Page Content Styles  ************/
+/***********************************************/
+
+.entr-ani {
+	animation: fade-ani 1.5s ease-in-out 0.5s 1 normal backwards;
+}
+
+@keyframes fade-ani {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+.gear-spin {
+	animation: gear-spin-ani 1s linear 0s infinite normal both paused;
+}
+.feature-element:hover .gear-spin, .feature-cards:hover .gear-spin, .gear-spin:hover{	
+	animation-play-state: running;	
+}
+@keyframes gear-spin-ani {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(60deg); }
+}
+
+.brush-sweep {
+	animation: brush-sweep-ani 1s linear 0s infinite normal both paused;
+}
+.feature-element:hover .brush-sweep, .feature-box:hover .brush-sweep, .feature-cards:hover .brush-sweep, .brush-sweep:hover {	
+	animation-play-state: running;	
+}
+@keyframes brush-sweep-ani {
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(-6deg); }
+	75% { transform: rotate(6deg); }
+	100% { transform: rotate(0deg); }
+}
+
+.cloud-fade {
+	animation: cloud-fade-ani 1s ease 0s infinite alternate none paused;
+}
+.feature-element:hover .cloud-fade, .feature-box:hover .cloud-fade, .feature-cards:hover .cloud-fade, .cloud-fade:hover {	
+	animation-play-state: running;	
+}
+@keyframes cloud-fade-ani {
+	0% { margin-top: 0px; margin-bottom: 0px; }
+	100% { margin-top: -10px; margin-bottom: 10px; }
+}
+
+.arrow-move {
+	animation: arrow-move-ani 1s ease-in-out 0s infinite alternate none paused;
+}
+.feature-element:hover .arrow-move, .feature-box:hover .arrow-move, .arrow-move:hover {	
+	animation-play-state: running;	
+}
+@keyframes arrow-move-ani {
+	0% { margin-right: 0px; margin-left: 0px; }
+	100% { margin-right: -10px; margin-left: 10px; }
+}
+
+.site-scale {
+	animation: site-scale-ani 1s ease 0s infinite alternate none paused;
+}
+.feature-element:hover .site-scale, .feature-box:hover .site-scale, .site-scale:hover {	
+	animation-play-state: running;	
+}
+@keyframes site-scale-ani {
+	0% { width: 75px; margin: 0px; }
+	100% { width: 85px; margin: -5px; }
+}
+
+.hero-shape {
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+}
+.hero-shape:hover {
+	opacity: 0;
+}
+.hero-shape.bd1 { 
+	top: 140px; 
+	left: 80px; 
+	animation-name: hbd1-animation;
+	animation-duration: 3s;	
+}
+@keyframes hbd1-animation {
+	from { width: 10px; left: 80px; top: 140px; }
+	to { width: 8px; left: 84px; top: 148px; }
+}
+.hero-shape.gt1 {
+	top: 30px; 
+	left: 120px; 
+	animation-name: hgt1-animation;
+	animation-duration: 4s;
+}
+@keyframes hgt1-animation {
+	from { width: 10px; left: 120px; top: 30px; }
+	to { width: 8px; left: 130px; top: 28px; }
+}
+
+.bg-shapes {
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+}
+
+.bd1 {	
+	width: 10px;
+	top: 5px;
+	left: 6px;
+	animation-name: dot1-animation;
+	animation-duration: 4s;	
+}
+
+@keyframes dot1-animation {
+	from { width: 10px; left: 6px; top: 5px; }
+	to { width: 12px; left: 20px; top: 16px; }
+}
+
+.gt1 {
+	width: 10px;
+	top: 25px;
+	left: 45px;
+	animation-name: gt1-animation;
+	animation-duration: 4s;
+}
+
+@keyframes gt1-animation {
+	from { width: 10px; left: 45px; top: 25px; }
+	to { width: 12px; left: 50px; top: 15px; }
+}
+
+.gd1 {	
+	width: 13px;
+	top: 5px;
+	left: 80.5px;
+	animation-name: dot2-animation;
+	animation-duration: 6s;	
+}
+
+@keyframes dot2-animation {
+	from { width: 10px; left: 60px; top: 5px; }
+	to { width: 12px; left: 80px; top: 26px; }
+}
+
+.gt2 {
+	width: 10px;
+	top: 38px;
+	left: 86px;
+	animation-name: gt2-animation;
+	animation-duration: 8s;
+}
+
+@keyframes gt2-animation {
+	from { width: 13px; right: 86px; top: 28px; }
+	to { width: 16px; right: 95px; top: 57px; }
+}
+
+
+
+/***********************************************/
+/*************  Form / Pop Styles  *************/
+/***********************************************/
+
+.fs-overlay-ani {
+	animation-delay: 0s;
+	opacity: 0;
+	animation-duration: 0.6s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;	
+}
+
+.fs-overlay-open-ani {
+	animation-name: fs-overlay-open-ani;	
+}
+
+@keyframes fs-overlay-open-ani {	
+	0%   { height: 0px; }
+	1%   { opacity: 0; height: 100vh; }
+	100% { opacity: 1; height: 100vh; }
+}
+
+.fs-overlay-close-ani {
+	animation-name: fs-overlay-close-ani;
+}
+
+@keyframes fs-overlay-close-ani {
+	0%   { opacity: 1; height: 100vh; }
+	99%  { opacity: 0; height: 100vh; }
+	100% { height: 0px; }
+}
+
+.pop-window-ani {
+	animation-delay: 0s;
+	opacity: 0;
+	top: -1000px;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;	
+}
+
+.pop-window-open-ani {
+	animation-name: pop-window-open-ani;		
+	animation-duration: 0.6s;
+}
+
+@keyframes pop-window-open-ani {	
+	0%   { top: -1000px; }
+	1%   { opacity: 0; top: 50%; height: 430px; margin-top: -180px; }
+	100% { opacity: 1; top: 50%; height: 500px; margin-top: -250px; }
+}
+
+.pop-window-close-ani {
+	animation-name: pop-window-close-ani;
+	animation-duration: 0.3s;
+}
+
+@keyframes pop-window-close-ani {
+	0%   { opacity: 1; top: 50%; }
+	99%  { opacity: 0; top: 50%; }
+	100% { top: -1000px }
+}
+
+.pop-banner-ani {
+	animation-name: pb-ani;
+	animation-duration: 0.6s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;	
+}
+
+@keyframes pb-ani {
+	0%   { margin-bottom: -70px; }
+	100% { margin-bottom: -10px; }
+}
+
+.fadeIn {
+	animation-name: fade-in-animation;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+	animation-iteration-count: 1;
+	animation-duration: 1s;	
+}
+
+@keyframes fade-in-animation {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+input[type=submit] {
+	animation-name: input-animation;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+	animation-duration: 2s;	
+}
+
+@keyframes input-animation {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
