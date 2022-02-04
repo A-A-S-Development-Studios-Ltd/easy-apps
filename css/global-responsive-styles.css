@@ -12,6 +12,11 @@
 	grid-template-columns: auto auto;
 }
 
+#menu-logo-container {
+	text-align: left;
+	margin-left: 40px;
+}
+
 /*Footer Styles */
 .footer-cta-container {
 	grid-gap: 2rem;
@@ -93,13 +98,16 @@
 /* Laptops/desktops, 992px and up */
   
 	/*Menu Styles */
-	#menu-bar {
-		grid-template-columns: auto auto auto;
-	}
+	#menu-bar {	grid-template-columns: auto auto auto;	}
 	
 	#menu-mobile-btn { display: none; }
 
 	#menu-cta, #menu-links { display: flex;	}
+	
+	#menu-logo-container {
+		text-align: center;
+		margin: auto;
+	}
 	
 	/*Footer Styles */
 	.footer-cta-container {		
@@ -146,6 +154,9 @@
 
 @media only screen and (min-width: 1200px) {
 /* Large laptops and desktops, 1200px and up */
+
+	/*Menu Styles */
+	#menu-bar {	grid-template-columns: 25% 50% 25%;	}
 	
 	/*Footer Styles */ 	
 	.footer-cta { margin: 200px auto -90px; }

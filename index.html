@@ -1,109 +1,299 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Contact</title>
-    <style>
-      /* Style inputs with type="text", select elements and textareas */
-      input[type='text'],
-      select,
-      textarea {
-        width: 100%; /* Full width */
-        padding: 12px; /* Some padding */
-        border: 1px solid #ccc; /* Gray border */
-        border-radius: 4px; /* Rounded borders */
-        box-sizing: border-box; /* Make sure that padding and width stays in place */
-        margin-top: 6px; /* Add a top margin */
-        margin-bottom: 16px; /* Bottom margin */
-        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-      }
+<head>
+	<title>Easy Apps | Home</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/global-styles.css">
+	<link rel="stylesheet" href="css/global-animations.css">	
+	<link rel="stylesheet" href="css/global-responsive-styles.css">
+	<link rel="stylesheet" href="css/home-styles.css">
+	<link rel="stylesheet" href="css/home-responsive-styles.css">
+	<link rel="stylesheet" href="css/home-animations.css">
+	<link rel="icon" type="image/x-icon" href="favicon.svg">
+</head>
+<body style="margin: 0; padding: 0">
+<!-- Navigation Menu -->
+<div id="menu-bar">
+	<div id="menu-logo-container">
+		<a href="/">
+			<img src="assets/logo/easy-apps-logo.svg" id="menu-logo" />	
+		</a>
+	</div>
+	<div id="menu-links">
+		<ul>
+			<a href="about.html"><li>About Us</li></a>
+			<a href="services.html"><li>Services</li></a>
+			<li>Pricing</li>
+			<li>Contact</li>
+		</ul>
+	</div>
+	<div id="menu-cta">
+		<div class="blue-button" onclick="showOverlay()">
+			<p>Free Consult</p>
+		</div>
+	</div>	
+	<div id="menu-mobile-btn">
+		<div class="menu-button" onclick="showMenu()">
+			<img src="assets/icons/menu-icon.svg" id="menu-icon" />
+		</div>
+	</div>	
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu-ani">
+	<ul>
+		<li style="color: #0e76bc;"  onclick="showOverlay()">Free Consult</li>
+		<a href="about.html"><li>About Us</li></a>
+		<a href="services.html"><li>Services</li></a>
+		<li>Pricing</li>
+		<li>Contact</li>
+	</ul>
+</div>
+<!-- Mobile Menu Overlay -->
+<div id="menu-overlay" class="mobile-menu-ani" onclick="showMenu()"></div>
+<!-- Popup Window -->
+<div id="pop-window" class="pop-window-ani">
+	<div>
+		<div id="pop-banner">
+			<h4 class="white" style="margin: 10px;"><span id="pop-title">Schedule your free consultation</span></h4>
+		</div>	
+		<div class="pop-content">
+			<div id="pop-form">
+				<p>This 15m meeting will explain more details about the app development process, applicable contracts and answer any other questions.</p>
+				<p><b>Fill out the form below to get started.</b></p>
+				<form>
+					<label for="name" id="name-label">Name:</label>
+					<input type="text" id="name" name="name" placeholder="Your name.." required>
 
-      /* Style the submit button with a specific background color etc */
-      input[type='submit'] {
-        background-color: #04aa6d;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      /* When moving the mouse over the submit button, add a darker green color */
-      input[type='submit']:hover {
-        background-color: #45a049;
-      }
-
-      /* Add a background color and some padding around the form */
-      .container {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <form>
-        <label for="fname">Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter your name."
-          required
-        />
-        <label for="lname">Email</label>
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="Enter your email."
-          required
-        />
-
-        <label for="subject">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder=""
-          style="height: 200px"
-          required
-        ></textarea>
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-  </body>
+					<label for="email" id="email-label">Email:</label>
+					<input type="text" id="email" name="email" placeholder="Your contact info.." required>
+					
+					<input type="hidden" name="message" value="No Message">
+					
+					<div class="pop-actions">
+						<div>
+							<input type="submit" value="Submit">
+						</div>
+						<div class="pop-close">
+							<span onclick="closeOverlay()">Close</span>
+						</div>			
+					</div>			
+				</form>
+			</div>
+			<div id="pop-success" class="displayNone">
+				<p><b>Thank you for contacting us.</b></p>
+				<p>A member from our client success team will reach out to you shortly.</p>	
+				<div class="blue-button" onclick="closeOverlay()" style="position: absolute; bottom: 40px; right: 40px;">
+					<p>Close</p>
+				</div>					
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Popup Overlay -->
+<div id="full-screen-overlay" class="fs-overlay-ani" onclick="closeOverlay()"></div>
+<!-- Page Header -->
+<div class="bg-banner">
+	<img src="assets/background/white-cover.svg" class="hero-bg-cover" />
+	<img src="assets/background/ea-logo-watermark.svg" class="hero-bg-watermark hero-bgwm-ani" />	
+	<img src="assets/background/green-semi-circle.svg" class="hero-bg-gsc" />
+	<div class="grid-container hero-banner">
+		<div class="item1" style="z-index: 2;">
+			<div>
+				<h1 class="default white">Better Business App Solutions</h1>
+				<p class="default white">Ready to design your dream app? With 30+ years of app development experience, our team is ready to help.</p>
+				<div style="display: flex; margin-top: 40px">
+					<div style="margin: 0px 20px 0px 0px;"> 
+						<div class="white-button" onclick="showOverlay()">
+							<p>Get Started</p>
+						</div>
+					</div>
+					<div>
+						<p class="white" style="margin-top: 8px; font-weight: bolder;"><a class="text-link on-green">Find out More >></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item2" style="z-index: 2; position: relative;">
+			<video class="bg-dots-video" loop autoplay muted>
+			  <source src="assets/webm/bg-dots.webm" type="video/webm">
+			</video>
+			<video class="videoBanner" autoplay muted>
+			  <source src="assets/webm/easy-apps-phone.webm" type="video/webm">			  
+			  <source src="assets/png/easy-apps-phone.png" type="image/png">
+			</video>
+		</div>
+	</div>
+</div>
+<!-- Page Content Row -->
+<div class="grid-container feature-box-row entr-ani" style="position: relative;">
+	<div class="bg-shape-box1">	
+		<div class="bg-shape-inner-container">
+			<img src="assets/background/blue-dot.svg" class="bg-shapes bd1" />
+			<img src="assets/background/green-triangle.svg" class="bg-shapes gt1" />
+		</div>
+	</div>
+	<div class="item1">
+		<div class="extra-margin" style="max-width: 520px;">
+			<img width="100px" src="assets/icons/happy.svg" class="circle-shadow">
+			<h2 class="default">Perfect for connecting with your customers</h2>
+			<p class="default">Let our design team help you put the finishing touches on your very own custom built web or mobile application.</p>
+			<div style="margin-top: 40px">
+				<p style="font-weight: bolder;"><a class="text-link on-white">Learn More >></a></p>
+			</div>
+		</div>
+	</div>
+	<div class="item2">
+		<div class="feature-boxes extra-margin">
+			<div class="feature-box box1">
+				<img class="cloud-fade" width="75px" src="assets/icons/account-multiple.svg">
+				<h4 style="margin:6px 0px">Team Apps</h4>
+				<p>Build custom tools to improve your team's efficiency.</p>		
+			</div>
+			<div class="feature-box box2">
+				<img class="arrow-move" width="75px" src="assets/icons/swap-horizontal.svg">
+				<h4 style="margin:6px 0px">Service Apps</h4>
+				<p>Applications to best service your unique customers.</p>	
+			</div>
+			<div class="feature-box box3">
+				<img class="brush-sweep" width="75px" src="assets/icons/cards-outline.svg">
+				<h4 style="margin:6px 0px">Tracking Apps</h4>
+				<p>Track all your key data in one custom app the way you want it.</p>	
+			</div>
+			<div class="feature-box box4">
+				<img class="site-scale" width="75px" src="assets/icons/chart-tree.svg">
+				<h4 style="margin:6px 0px">Web Apps</h4>
+				<p>Back-end software for customers or staff, beyond any website.</p>	
+			</div>	
+		</div>		
+	</div>	
+</div>
+<!-- Page Content Row -->
+<div class="bg-banner2">
+	<div class="bg-shape-box2">	
+		<div class="bg-shape-inner-container">
+			<img src="assets/background/green-dot.svg" class="bg-shapes gd1" />
+			<img src="assets/background/green-triangle.svg" class="bg-shapes gt2" />
+		</div>
+	</div>
+	<div class="grid-container hero-banner">
+		<div class="item1 reverse-order">
+			<div class="phone-feature-container">
+				<img src="assets/background/blue-dot-array.svg" class="bg-dots-blue-video" />
+				<video class="phone-feature-video" autoplay muted>
+				  <source src="assets/webm/phone-feature.webm" type="video/webm">
+				  <source src="assets/png/phone-feature.png" type="image/png">
+				</video>		
+			</div>
+		</div>
+		<div class="item2 reverse-order">
+			<div class="extra-margin" style="max-width: 520px;">
+				<img width="100px" src="assets/icons/target.svg" class="circle-shadow">
+				<h2 class="default">Optimal user experience for best performance</h2>
+				<p class="default">Users should be able to use your apps without explanation, together we will optimise your customers' user experience.</p>
+				<div style="margin-top: 40px">
+					<p style="font-weight: bolder;"><a class="text-link on-white" onclick="showOverlay()">Get Started >></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Page Content Row -->
+<div class="center-headings extra-margin">
+	<h5 class="default">How we do it</h5>
+	<h3 class="default">Simple Development Process</h3>
+</div>
+<!-- Page Content Row -->
+<div class="cards-container">
+	<div class="feature-cards card1">
+		<img width="75px" class="brush-sweep" src="assets/icons/brush-variant.svg">
+		<h4 style="margin:6px 0px">1. Design</h4>
+		<p>The first phase includes finalizing all the features, screen layouts, buttons and any other app requirements.</p>
+		<p>We will provide you with a design prototype which will be the basis for your app.</p>
+	</div>
+	<div class="feature-cards card2">
+		<img width="75px" class="gear-spin" src="assets/icons/cog.svg">
+		<h4 style="margin:6px 0px">2. Develop</h4>
+		<p>The next phase starts building the app itself, providing you with regular progress updates and ensuring reasonable timelines for deliverables are met. This phase can also include setting up any other servers or hardware required.</p>
+	</div>
+	<div class="feature-cards card3">	
+		<img width="75px" class="cloud-fade" src="assets/icons/cloud-upload.svg">
+		<h4 style="margin:6px 0px">3. Deploy</h4>
+		<p>Lastly we will deploy your app, either to your own servers or onto the respective app stores to make sure your customers are able to use your app to the fullest.</p>
+		<p>Ongoing maintenance services are available.</p>
+	</div>
+</div>
+<!-- Page Content Row -->
+<div class="green-bar">
+	<img src="assets/background/bg-triangles.svg" class="bg-triangles" />	
+	<div class="sample-app-banner">
+		<div class="app-col1" style="max-width: 520px;">
+			<h5 class="default white">Try it today</h5>
+			<h3 class="default white">Download our Sample App to Experience it Yourself</h3>
+			<p class="default white">Responsively designed for mobile devices, Easy PDF Signer is a simple document management app that tracks document signatures, signature requests and much more.</p>
+			<a href="https://easypdfsigner.ca/" target="_blank">
+				<div class="white-button" style="margin-top: 40px">
+					<p>Visit Site</p>
+				</div>
+			</a>
+		</div>
+		<div class="app-col2" style="position: relative;">
+			<video class="bg-dots-video" loop autoplay muted>
+			  <source src="assets/webm/bg-dots.webm" type="video/webm">
+			</video>
+			<video class="phone-feature-video" autoplay muted>
+			  <source src="assets/webm/phones-feature.webm" type="video/webm">
+			  <source src="assets/png/phones-feature.png" type="image/png">
+			</video>
+			
+		</div>	
+	</div>
+</div>
+<!-- Footer CTA -->
+<div class="footer-cta">
+	<div class="footer-cta-container">
+		<div class="footer-cta-col1">
+			<h3 class="default white">Ready to get started?</h3>
+			<p class="default white">Schedule your free consultation to see how we can best help make your dream app into a reality.</p>
+		</div>
+		<div class="footer-cta-col2">
+			<div class="blue-button" onclick="showOverlay()">
+				<p>Free Consult</p>
+			</div>		
+		</div>	
+	</div>
+</div>
+<!-- Footer -->
+<div class="footer">
+	<div class="footer-container">
+		<div class="footer-col1">
+			<img src="assets/logo/easy-apps-logo.svg" width="300px">
+			<p class="default darkGrey footer-copy-text">
+				&copy; A.A.S. Development Studios Ltd. 2022
+			</p>
+		</div>		
+		<div class="footer-col2">
+			<h6 class="default white">Download</h6>
+			<p><a href="https://easypdfsigner.ca/" target="_blank" class="darkGrey footer-link">Easy PDF Signer</a></p>
+			<p class="darkGrey"><a class="footer-link">Easy Todo</a></p>
+			<p class="darkGrey"><a class="footer-link">Buginator</a></p>
+		</div>
+		<div class="footer-col3">
+			<h6 class="default white">Company</h6>
+			<p class="darkGrey"><a class="footer-link">About</a></p>
+			<p class="darkGrey"><a class="footer-link">Contact</a></p>
+			<p class="darkGrey"><a class="footer-link">Privacy Policy</a></p>
+		</div>
+		<div class="footer-col4">
+			<h6 class="default white">Social</h6>
+			<div style="display:inline-flex;">
+				<img src="assets/icons/facebook.svg" width="50px" class="social-link" />
+				<img src="assets/icons/linkedin.svg" width="50px" class="social-link" />
+			</div>
+		</div>
+	</div>	
+</div>
+<!-- Scripts -->
+<script src="/scripts/main-scripts.js"></script>
+<script src="/scripts/home-script.js"></script>
+</body>
 </html>
-<script>
-  function handleSubmit(event) {
-    event.preventDefault();
-
-    const data = new FormData(event.target);
-
-    const value = Object.fromEntries(data.entries());
-    let url =
-      'http://dev.easy-apps.ca:3000/contact.cfc?method=sendInfo&returnFormat=JSON';
-    postData(url, value).then((response) => {
-      //This runs afer the email has been sent. So you  can do whatever is needed here.
-      console.log(response);
-    });
-  }
-  async function postData(url = '', data = {}) {
-    // Default options are marked with *
-    const response = await fetch(url, {
-      method: 'POST', // *GET, POST, PUT, DELETE, etc.
-      mode: 'cors', // no-cors, *cors, same-origin
-      cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: 'same-origin', // include, *same-origin, omit
-      headers: {
-        'Content-Type': 'application/json',
-        // 'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      redirect: 'follow', // manual, *follow, error
-      referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-      body: JSON.stringify(data), // body data type must match "Content-Type" header
-    });
-    return response.json(); // parses JSON response into native JavaScript objects
-  }
-  const form = document.querySelector('form');
-  form.addEventListener('submit', handleSubmit);
-</script>
