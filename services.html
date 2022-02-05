@@ -20,8 +20,8 @@
 		<ul>
 			<a href="about.html"><li>About Us</li></a>
 			<li class="active-link">Services</li>
-			<li>Pricing</li>
-			<li>Contact</li>
+			<a href="pricing.html"><li>Pricing</li></a>
+			<a href="contact.html"><li>Contact</li></a>
 		</ul>
 	</div>
 	<div id="menu-cta">
@@ -41,8 +41,8 @@
 		<li style="color: #0e76bc;"  onclick="showOverlay()">Free Consult</li>
 		<a href="about.html"><li>About Us</li></a>
 		<li class="active-link">Services</li>
-		<li>Pricing</li>
-		<li>Contact</li>
+		<a href="pricing.html"><li>Pricing</li></a>
+		<a href="contact.html"><li>Contact</li></a>
 	</ul>
 </div>
 <!-- Mobile Menu Overlay -->
@@ -57,7 +57,7 @@
 			<div id="pop-form">
 				<p>This 15m meeting will explain more details about the app development process, applicable contracts and answer any other questions.</p>
 				<p><b>Fill out the form below to get started.</b></p>
-				<form>
+				<form id="pform">
 					<label for="name" id="name-label">Name:</label>
 					<input type="text" id="name" name="name" placeholder="Your name.." required>
 
@@ -221,8 +221,8 @@
 		</div>
 		<div class="footer-col3">
 			<h6 class="default white">Company</h6>
-			<p class="darkGrey"><a class="footer-link">About</a></p>
-			<p class="darkGrey"><a class="footer-link">Contact</a></p>
+			<p><a href="about.html" class="darkGrey footer-link">About</a></p>
+			<p><a href="contact.html" class="darkGrey footer-link">Contact</a></p>
 			<p class="darkGrey"><a class="footer-link">Privacy Policy</a></p>
 		</div>
 		<div class="footer-col4">
