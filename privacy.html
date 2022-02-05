@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Easy Apps | Privacy Policy</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/global-styles.css">	
+	<link rel="stylesheet" href="css/global-animations.css">
+	<link rel="stylesheet" href="css/global-responsive-styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.svg">
+</head>
+<body style="margin: 0; padding: 0">
+<!-- Navigation Menu -->
+<div id="menu-bar">
+	<div id="menu-logo-container">
+		<a href="/">
+			<img src="assets/logo/easy-apps-logo.svg" id="menu-logo" />	
+		</a>
+	</div>
+	<div id="menu-links">
+		<ul>
+			<a href="about.html"><li>About Us</li></a>
+			<a href="services.html"><li>Services</li></a>
+			<a href="pricing.html"><li>Pricing</li></a>
+			<a href="contact.html"><li>Contact</li></a>
+		</ul>
+	</div>
+	<div id="menu-cta">
+		<div class="blue-button" onclick="showOverlay()">
+			<p>Free Consult</p>
+		</div>
+	</div>	
+	<div id="menu-mobile-btn">
+		<div class="menu-button" onclick="showMenu()">
+			<img src="assets/icons/menu-icon.svg" id="menu-icon" />
+		</div>
+	</div>	
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu-ani">
+	<ul>
+		<li style="color: #0e76bc;"  onclick="showOverlay()">Free Consult</li>
+		<a href="about.html"><li>About Us</li></a>
+		<a href="services.html"><li>Services</li></a>
+		<a href="pricing.html"><li>Pricing</li></a>
+		<a href="contact.html"><li>Contact</li></a>
+	</ul>
+</div>
+<!-- Mobile Menu Overlay -->
+<div id="menu-overlay" class="mobile-menu-ani" onclick="showMenu()"></div>
+<!-- Popup Window -->
+<div id="pop-window" class="pop-window-ani">
+	<div>
+		<div id="pop-banner">
+			<h4 class="white" style="margin: 10px;"><span id="pop-title">Schedule your free consultation</span></h4>
+		</div>	
+		<div class="pop-content">
+			<div id="pop-form">
+				<p>This 15m meeting will explain more details about the app development process, applicable contracts and answer any other questions.</p>
+				<p><b>Fill out the form below to get started.</b></p>
+				<form id="pform">
+					<label for="name" id="name-label">Name:</label>
+					<input type="text" id="name" name="name" placeholder="Your name.." required>
+
+					<label for="email" id="email-label">Email:</label>
+					<input type="text" id="email" name="email" placeholder="Your contact info.." required>
+					
+					<input type="hidden" name="message" value="No Message">
+					
+					<div class="pop-actions">
+						<div>
+							<input type="submit" value="Submit">
+						</div>
+						<div class="pop-close">
+							<span onclick="closeOverlay()">Close</span>
+						</div>			
+					</div>			
+				</form>
+			</div>
+			<div id="pop-success" class="displayNone">
+				<p><b>Thank you for contacting us.</b></p>
+				<p>A member from our client success team will reach out to you shortly.</p>	
+				<div class="blue-button" onclick="closeOverlay()" style="position: absolute; bottom: 40px; right: 40px;">
+					<p>Close</p>
+				</div>					
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Popup Overlay -->
+<div id="full-screen-overlay" class="fs-overlay-ani" onclick="closeOverlay()"></div>
+<!-- Page Header -->
+<div class="green-header-bar entr-ani">
+	<img src="assets/background/bg-triangles.svg" class="bg-triangles" />	
+	<div class="global-container header-text-container">
+		<h5 class="default white">Apps, The Easy Way</h5>
+		<h3 class="default white">Protecting your Privacy</h3>
+	</div>
+</div>
+<!-- Page Feature animation -->
+<div class="feature-animation entr-ani">
+	<div>
+		<img src="assets/background/dot-feature.svg" id="feature-dots" />
+		<img src="assets/background/mask-circle.svg" id="mask-circle" />
+		<img src="assets/background/mask-cutout.svg" id="mask-cutout" />
+	</div>
+</div>
+<!-- Page Content Row -->
+<div class="global-container single-col-container entr-ani">
+	<div class="single-col1">
+	<img src="assets/logo/easy-apps-logo.svg" width="350px" />	
+	<h1 class="default">Privacy Policy</h1>
+	<h4>Effective August 1st, 2020</h4>
+	<br>
+	<p>Easy Apps is owned and operated by A.A.S Development Studios Ltd. hereby referred to as 'AAS'. By accessing AAS's website you are agreeing to this privacy policy and all applicable laws and regulations. Where there is an inconsistency between this privacy policy and any applicable legislation, such legislation shall prevail.</p>
+	<p>AAS respects the privacy and confidentiality of our clients, employees, and website users. The purpose of this privacy policy is to advise our clients and website users on how AAS collects and uses, manages, and discloses personal information. Our privacy policy applies to all employees and directors of AAS, as well as, contractors, suppliers, agents, and representatives.</p>
+	<p>AAS adheres to the Government of Canada's Personal Information Protection and Electronic Documents Act. The Canadian Standards Association (CSA) Model Code for the Protection of Personal Information serves as the foundation for multinational exchanges of information and data protection laws. Consistent with government legislation and the CSA code, our information privacy practices are as follows:</p> 
+	<ul style="line-height: 27px;">
+		<li>Accountability: AAS is actively accountable for our clients' personal information and ensures appropriate policies and procedures are in place to protect that information.</li>
+		<li>Identifying purposes: AAS will identify the purposes for collecting personal information.</li>
+		<li>Consent - AAS will not collect, use, or disclose personal information without the consent of the client.</li>
+		<li>Limiting collection: AAS will collect only necessary, relevant information by lawful and fair means.</li>
+		<li>Limiting use, disclosure, and retention: AAS will not use or disclose information for purposes other than for those which it was collected without consent of the individual or organization. Information will be maintained only for as long as necessary and will not be disclosed to other parties.</li>
+		<li>Accuracy: AAS will ensure any personal information collected is as accurate, complete, and up-to-date as possible for the purposes for which it will be used.</li>
+		<li>Safeguard: AAS will protect personal information using reasonable physical, administrative and procedural, and technical safeguards appropriate to its sensitivity.</li>
+		<li>Openness: AAS will make available our privacy policies and practices on request to our clients.</li>
+		<li>Individual access: clients are welcome to request access to their personal information that AAS retains to determine accuracy and completeness and have it amended as appropriate.</li>
+		<li>Challenging compliance: AAS maintains a complaint procedure and a designated person to ensure compliance with privacy legislation.</li>
+	</ul>
+	<br>
+	<p>AAS takes all reasonable security measures to protect personal information from loss, unauthorized access, destruction, misuse, modification, and disclosure. However, we cannot ensure or warrant the security of any information you transmit to us over the Internet and you do so at your own risk. AAS will not be liable in any way in relation to any breach of security, or unintended loss, or disclosure of information due to our website being linked to the Internet.</p>
+
+	<h2>Privacy Questions &amp; Answers</h2>
+	<br>
+	<h3>How does AAS collect and use my information?</h3>
+	<br>
+	<p>AAS collects your personal information through various means including personal contact, job applications, phone contact, submitting your email, subscribing to newsletters, and through website cookies. This information is collected to manage our ongoing relationship with you. In general, the information collected and used about you is for the purposes of:</p>
+	<ul style="line-height: 27px;">
+		<li>Providing information about AAS and its operations, including, but not limited to: newsletters, marketing information, software updates, and upcoming events.</li>
+		<li>Product purchases and support.</li>
+		<li>Enhancing the functionality of our website.</li>
+		<li>Managing and administering contracts.</li>
+		<li>Meeting any legal or regulatory requirement or obligation;</li>
+		<li>Developing and improving our products and services, website content, and advertising.</li>
+		<li>Sending important notices such as changes to our terms, conditions, and policies.</li>
+		<li>Managing and developing our business.</li>
+		<li>Internal auditing, data analysis, and research.</li>
+		<li>Employment and contracting opportunities.</li>
+	</ul>
+	<br>
+	<h3>What information does AAS collect?</h3>
+	<br>
+	<p>AAS only collects the minimum required personally identifiable data such as your name, title, company/educational institution, address, telephone and fax number, and email address, when it is voluntarily submitted by you. When you send AAS email, we collect your email address, your Internet protocol (IP) address, and your message so that we may reply to you. We recommend that sensitive personal information not be sent unencrypted over the Internet or by email.</p>
+	<br>
+	<h3>Can I submit my resume/CV on your website or by an email?</h3>
+	<br>
+	<p>Yes, you may submit your resume/CV along with your coverletter to: <a href="mailto:contact@easy-apps.ca">contact@easy-apps.ca</a></p> 
+	<p>Due to the high volume of resumes received, we will only contact those applicants who have been selected to proceed in the hiring process. The hiring process at AAS involves interviews and pre-employment testing. The process for each position may vary and the process will be outlined to you if contacted. </p>
+	<br>
+	<h3>Do I have to provide my personal information?</h3>
+	<br>
+	<p>No. You don't need to provide any information that identifies you or any other personal information in order to use AAS's website. AAS receives personal information from you only with your express consent or when you voluntarily choose to provide it. Consent may be withdrawn, subject to legal or contractual agreements. We will respond to your request within 10 business days.</p>
+	<br>
+	<h3>Does AAS release my information to others?</h3>
+	<br>
+	<p>No. We do not sell, rent, or give away your personal information. We will not release your personal information to a third party, other than our auditors, affiliates, or our parent organization, AAS (all on a need-to-know basis) unless authorized by you or required by a court order. All personally identifiable information collected is subject to disclosure to judicial or other government agencies pursuant to properly obtained warrants, subpoenas, or other governmental orders.</p>
+	<br>
+	<h3>Do I have to receive information from AAS?</h3>
+	<br>
+	<p>You may choose to receive information from each AAS division or you may opt out of receiving information from that division at any time simply by clicking the unsubscribe link on our correspondence. In the case of legal relationships, you may not opt out of receiving legal notices or other communications provided for in legal agreements you are a party to with AAS. This information is considered vital to your interaction with AAS. You may request to have this information deleted upon termination of your product/service agreement.</p>
+	<br>
+	<h3>How does AAS store my information and for how long?</h3>
+	<br>
+	<p>AAS takes all reasonable security measures to protect your personal information. We maintain procedures to ensure your personal information is collected and stored in a secured manner. Information is only accessible to designated staff to carry out the stated purposes we have communicated to you. AAS retains information only for as long as necessary and as required by law. </p>
+	<br>
+	<h3>What can I do to protect my information?</h3>
+	<br>
+	<p>You are responsible for creating and maintaining any username and password associated with EasyApps and our website. Choose a password that is not easy to guess and keep your password secure. Never share your password with anyone. No one from AAS will call or email you asking for your password.</p>
+	<p>It is also important that your computer anti-virus and security software is kept up to date. When your session is complete, please ensure you properly log-off from our website and close your browser.</p>
+	<p>You are responsible for all interaction with our website occurring in connection with your password and user name. You must immediately notify AAS of any unauthorized use of your password and user name, or any other breach of security related to your account and our website.</p>
+	<br>
+	<h3>How do I ensure the accuracy of my information or have it removed?</h3>
+	<br>
+	<p>To review, correct, update, or remove information you previously provided to AAS you may contact our office as follows:</p>
+	<p>Account: You can update your profile within your account. To delete your account please contact us at <a href="mailto:contact@easy-apps.ca">contact@easy-apps.ca</a> requesting Account Delete in the subject line.</p>
+	<p>When required, please ensure you clearly indicate the account information you would like to update or delete in our database. We will respond to your request within 10 business days. We may need to retain certain information for record keeping purposes and reserve the right to re-contact former users of the site for legal or record keeping purposes. You may request to have this information deleted once your product/service agreement has expired. </p>
+	<br>
+	<h3>What information does AAS's website collect?</h3>
+	<br>
+	<p>The AAS website uses software that automatically collects the IP address of the computer through which the user is connected to the Internet. AAS's website also automatically collects information about the users' Internet browser software, operating system, the date and time of the users' access, and pages viewed while on the AAS website. The referral URL may also be collected. This information is used in aggregate form for statistical purposes only to assess how our website is being used and improve the user experience. </p>
+	<br>
+	<h3>Does AAS use cookies?</h3>
+	<br>
+	<p>When you view certain areas of our website information may be stored on your computer. This information will be in the form of a "cookie" or similar file and will permit tailoring of the web site to better match your interests and preferences. We do not use cookies to retrieve data from your hard drive, or to obtain your email address, or to obtain any other personal information.</p>
+	<p>You may choose not to accept cookies by setting your browser privacy options. Please refer to your browser documentation for more information. Please note, that by not accepting cookies you may limit the functionality that we can provide when you visit our website.</p>
+	<p>Additionally, AAS uses Google Analytics, a web analytics service provided by Google Inc., to provide website marketing data. This tool uses cookies, which are automatically downloaded on your computer to collect anonymous information. The information reported includes traffic patterns, such as how visitors access our website, pages viewed, average time on our site, and where in the world our visitors come from. If you would prefer to opt out of being tracked by Google Analytics across all websites please visit http://tools.google.com/dlpage/gaoptout.</p>
+	<br>
+	<h3>What about children using your website?</h3>
+	<br>
+	<p>Our website is not directed at children. We do not intentionally collect information from people under the age of 18.</p>
+	<br>
+	<h3>Does AAS's privacy policy extend to links to external websites?</h3>
+	<br>
+	<p>No. Our privacy policy applies exclusively to information collected by AAS and our website. The AAS website may contain links to external websites that are provided as a convenience for our users. AAS is not responsible for the privacy practices and security of these external websites. To ensure your personal information is protected, you are responsible to review the privacy policy for each website you visit.</p>
+	<br>
+	<h3>What if I have further questions or concerns about my privacy?</h3>
+	<br>
+	<p>If you have questions or concerns regarding your privacy and this website please contact us at:</p>
+	<p><strong>A.A.S. Development Sutdios Ltd.</strong><br>
+	2-394 Carpathia Rd.<br>
+	Winnipeg, Manitoba<br>
+	Canada<br>
+	R3N 1Y4</p>
+
+	<p>Attention: Privacy Officer<br>
+	Phone: 204-230-5661<br>
+	Email: <a href="mailto:contact@easy-apps.ca">contact@easy-apps.ca</a></p>
+	</div>
+</div>
+<!-- Page BG Dots Box -->
+<div style="position: relative; top: 90px;">
+	<div class="bg-shape-box1">	
+		<div class="bg-shape-inner-container">
+			<img src="assets/background/blue-dot.svg" class="bg-shapes bd1" />
+			<img src="assets/background/green-triangle.svg" class="bg-shapes gt1" />
+		</div>
+	</div>
+</div>
+<!-- Footer CTA -->
+<div class="footer-cta">
+	<div class="footer-cta-container">
+		<div class="footer-cta-col1">
+			<h3 class="default white">Ready to get started?</h3>
+			<p class="default white">Schedule your free consultation to see how we can best help make your dream app into a reality.</p>
+		</div>
+		<div class="footer-cta-col2">
+			<div class="blue-button" onclick="showOverlay()">
+				<p>Free Consult</p>
+			</div>		
+		</div>	
+	</div>
+</div>
+<!-- Footer -->
+<div class="footer">
+	<div class="footer-container">
+		<div class="footer-col1">
+			<img src="assets/logo/easy-apps-logo.svg" width="300px">
+			<p class="default darkGrey footer-copy-text">
+				&copy; A.A.S. Development Studios Ltd. 2022
+			</p>
+		</div>		
+		<div class="footer-col2">
+			<h6 class="default white">Download</h6>
+			<p><a href="https://easypdfsigner.ca/" target="_blank" class="darkGrey footer-link">Easy PDF Signer</a></p>
+			<p class="darkGrey"><a class="footer-link">Easy Todo</a></p>
+			<p class="darkGrey"><a class="footer-link">Buginator</a></p>
+		</div>
+		<div class="footer-col3">
+			<h6 class="default white">Company</h6>
+			<p><a href="about.html" class="darkGrey footer-link">About</a></p>
+			<p><a href="contact.html" class="darkGrey footer-link">Contact</a></p>
+			<p><a href="privacy.html" class="darkGrey footer-link">Privacy Policy</a></p>
+		</div>
+		<div class="footer-col4">
+			<h6 class="default white">Social</h6>
+			<div style="display:inline-flex;">
+				<img src="assets/icons/facebook.svg" width="50px" class="social-link" />
+				<img src="assets/icons/linkedin.svg" width="50px" class="social-link" />
+			</div>
+		</div>
+	</div>	
+</div>
+<!-- Scripts -->
+<script src="/scripts/main-scripts.js"></script>
+<script src="/scripts/about-script.js"></script>
+</body>
+</html>
