@@ -14,8 +14,9 @@
 
 #menu-logo-container {
 	text-align: left;
-	margin-left: 40px;
+	margin-left: 20px;
 }
+#menu-mobile-btn { margin-right: 20px; }
 
 /*Footer Styles */
 .footer-cta-container {
@@ -28,7 +29,7 @@
 
 .footer-container {
 	max-width: 500px;
-	margin: 50px;
+	margin: 10px;
 	grid-template-columns:  auto;
 	grid-template-rows: auto auto auto auto;
 }
@@ -40,6 +41,10 @@
 .footer-cta { margin: 200px 25px -90px; }
 
 /* Page Styles */
+.extra-margin {	margin: 10px; }
+
+.global-container { padding: 20px; }
+
 .two-col-container {
 	grid-template-columns:  auto;
 	grid-template-rows: auto auto;
@@ -52,7 +57,7 @@
 .bg-shape-box1 { top: 20px; bottom: auto; left: auto; right: 20px; }
 .bg-shape-box2 { top: 40px; right: 90px;}
 
-.feature-animation div { width: 90px; }
+.feature-animation div { width: 60px; }
 	
 	
 
@@ -88,8 +93,14 @@
 @media only screen and (min-width: 768px) {  
 /* Landscape tablets, 768px and up */
 
+	#menu-logo-container { margin-left: 40px; }
+	#menu-mobile-btn { margin-right: 40px; }
+
 	.feature-animation div { width: 108px; }
+	
+	.extra-margin {	margin: 20px; }
 		
+	.global-container { padding: 20px 50px; }
 }
 
 
@@ -136,6 +147,8 @@
 	.footer-cta { margin: 200px 50px -90px; }  
 	
 	/* Page Styles */
+	.extra-margin {	margin: 50px; }
+	
 	.two-col-container {
 		grid-template-columns:  auto auto;
 		grid-template-rows: auto;

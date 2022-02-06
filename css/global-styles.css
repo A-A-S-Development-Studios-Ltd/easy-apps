@@ -3,6 +3,22 @@
 /***************  Global Styles  ***************/
 /***********************************************/
 
+@font-face {
+  font-family: Comfortaa;
+  src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: DejaVu Sans;
+  src: url(../fonts/DejaVuSans.ttf);
+}
+
+@font-face {
+  font-family: DejaVu Sans;
+  src: url(../fonts/DejaVuSans-Bold.ttf);
+  font-weight: bold;
+}
+
 body {
 	color: #1e1e1e;	
 	font-family: "Comfortaa", monospace;
@@ -367,6 +383,10 @@ a:visited {
 	grid-column: 4/5;
 }
 
+.footer-col1 img {
+	max-width: 90%;
+}
+
 .footer-copy-text {
 	font-size: 0.8em;
 	text-align: center;
@@ -474,7 +494,7 @@ a:visited {
     top: 333px;
     right: 10px;
     overflow: hidden;
-	z-index: 0;
+	z-index: -1;
 }
 
 .feature-animation div {
