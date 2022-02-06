@@ -58,7 +58,22 @@
 .bg-shape-box2 { top: 40px; right: 90px;}
 
 .feature-animation div { width: 60px; }
-	
+
+#pop-window {
+	left: 2.5%;
+	max-width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#pop-banner > h4 {
+	margin: 14px auto;
+	font-size: 18px;
+}
+
+.pop-content, .cf-content {
+	padding: 10px 25px;
+}
 	
 
 /***********************************************/
@@ -81,6 +96,20 @@
 	.footer-col2{ grid-row: 2 / 3; grid-column: 1/2; }
 	.footer-col3{ grid-row: 2 / 3; grid-column: 2/3; }
 	.footer-col4{ grid-row: 3 / 4; grid-column: 1/2; }
+	
+	#pop-window {
+		left: 50%;
+		margin: -250px;
+	}
+	
+	#pop-banner > h4 {
+		margin: 10px;
+		font-size: 23px;
+	}
+	
+	.pop-content, .cf-content {
+		padding: 25px 50px 0px;
+	}
 
 }
 
@@ -100,7 +129,8 @@
 	
 	.extra-margin {	margin: 20px; }
 		
-	.global-container { padding: 20px 50px; }
+	.global-container { padding: 20px 50px; }	
+
 }
 
 

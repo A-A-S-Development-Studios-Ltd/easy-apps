@@ -680,7 +680,8 @@ input[type=submit]:hover {
 
 #pop-window > div {	
 	width: 500px; 
-	height: 500px; 
+    min-height: 500px;
+    max-width: 100%;
 }
 
 #pop-banner, .cf-header {
@@ -690,6 +691,10 @@ input[type=submit]:hover {
     height: 50px;
     padding: 10px 20px;
 	margin-bottom: -10px;
+}
+
+#pop-banner > h4 {
+	margin: 10px;
 }
 
 .pop-content, .cf-content {
