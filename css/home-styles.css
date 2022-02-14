@@ -40,7 +40,7 @@
 .bg-banner2 {
 	width: 100%;
 	min-height: 820px;
-	background: #FFFFFF url("../assets/background/bg-shape.svg") no-repeat right top;
+	background: url("../assets/background/bg-shape.svg") no-repeat right top;
 	background-size: contain;
 	position: relative;
 	margin: 0px auto 160px;

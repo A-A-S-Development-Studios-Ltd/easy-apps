@@ -1,0 +1,42 @@
+
+/***********************************************/
+/**************  Darkmode Styles  **************/
+/***********************************************/
+
+@media (prefers-color-scheme: dark) {
+	/*Global Styles*/
+	body{
+		background: #1e1e1e;
+		color: #e6e6e6;
+	}
+	
+	/*Menu Styles*/
+	#menu-bar {
+		background: #2f2f2f;		
+	}
+		
+	#menu-cta .blue-button { background: #2f2f2f; }
+	#menu-cta .blue-button:hover { background: #182a37; }
+	
+	/*Footer Styles*/
+	
+	/*Home Page*/
+	.feature-box, .feature-cards { background: #282828; }	
+	
+	.bg-banner2 {
+		background: url("../assets/background/bg-shape-dark.svg") no-repeat right top;
+	}
+	
+	img.hero-bg-cover { content: url('../assets/background/white-cover-dark.svg') }
+	
+	/* Other Pages */
+	.feature-element:hover { background: #282828; }	
+	
+	img.feature-bg-shape { content: url('../assets/background/bg-shape-dark.svg') }
+	
+	#mask-circle, #mask-cutout {
+		filter: brightness(0) saturate(100%) invert(14%) sepia(1%) saturate(0%) hue-rotate(222deg) brightness(87%) contrast(102%);
+	}
+		
+
+}
