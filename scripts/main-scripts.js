@@ -70,6 +70,15 @@ if (history.scrollRestoration) {
     }
 }
 
+function scrollPage(target) {
+	
+	const yOffset = -90; 
+	const element = document.getElementById(target);
+	const yPos = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+	window.scrollTo({top: yPos, behavior: 'smooth'});
+}
+
 
 
 /***********************************************/

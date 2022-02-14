@@ -38,7 +38,7 @@
 .footer-col3{ grid-column: 1/2; }
 .footer-col4{ grid-column: 1/2; }
 
-.footer-cta { margin: 200px 25px -90px; }
+.footer-cta { margin: 200px 25px -90px; padding: 20px; }
 
 /* Page Styles */
 .extra-margin {	margin: 10px; }
@@ -174,7 +174,7 @@
 	.footer-col3{ grid-row: 1 / 2; grid-column: 3/4; }
 	.footer-col4{ grid-row: 1 / 2; grid-column: 4/5; }
 	
-	.footer-cta { margin: 200px 50px -90px; }  
+	.footer-cta { margin: 200px 50px -90px; padding: 20px 60px; }  
 	
 	/* Page Styles */
 	.extra-margin {	margin: 50px; }

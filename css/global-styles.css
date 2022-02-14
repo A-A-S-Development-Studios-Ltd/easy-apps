@@ -193,7 +193,8 @@ a:visited {
 	cursor: pointer;
 	margin: 2px;
 	height: 50px;
-	width: auto; 
+	width: auto; 	
+    max-width: 90%;
 	transition: height 2s, margin 2s;
 }
 
@@ -392,6 +393,10 @@ a:visited {
 	text-align: center;
 }
 
+.footer-link {
+	transition: color 0.3s;
+}
+
 .footer-link:hover {
 	cursor: pointer;
 	text-decoration: underline;
@@ -408,6 +413,13 @@ a:visited {
 	opacity: 1;
 }
 
+.footer-link-icon {
+	transition: filter 0.3s;
+}
+
+.footer-link-icon:hover {
+	filter: invert(32%) sepia(99%) saturate(1848%) hue-rotate(133deg) brightness(99%) contrast(101%);
+}
 
 
 /***********************************************/

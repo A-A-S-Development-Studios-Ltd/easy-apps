@@ -15,7 +15,7 @@
 .hero-bg-cover {
 	width: 100%;
 	position: absolute;
-	bottom: 0;	
+	bottom: -1px;	
     z-index: 2;
 }
 
@@ -54,6 +54,14 @@
 	position: relative;
 }
 
+.hero-banner-actions {
+	display: flex; 
+	margin-top: 40px;
+}
+
+.hb-action-col1 {
+	margin: 0px 20px 0px 0px;
+}
 
 .grid-container {
 	display: grid;
