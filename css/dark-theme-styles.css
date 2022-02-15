@@ -10,13 +10,17 @@
 		color: #e6e6e6;
 	}
 	
+	#pop-window, .pop-content, .cf-content {
+		background: #2f2f2f; 
+	}
+	
 	/*Menu Styles*/
-	#menu-bar {
+	#menu-bar, #mobile-menu {
 		background: #2f2f2f;		
 	}
 		
-	#menu-cta .blue-button { background: #2f2f2f; }
-	#menu-cta .blue-button:hover { background: #182a37; }
+	#menu-cta .blue-button, .menu-button { background: #2f2f2f; }
+	#menu-cta .blue-button:hover, .menu-button:hover { background: #182a37; }
 	
 	/*Footer Styles*/
 	

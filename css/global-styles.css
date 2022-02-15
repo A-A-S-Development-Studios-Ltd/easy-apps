@@ -644,7 +644,7 @@ input, textarea {
 	font-family: "Comfortaa", monospace;
 	display: block;
     width: -webkit-fill-available;
-    min-width: 90%;
+    min-width: 99%;
     padding: 10px;
     margin: 5px auto 30px;
 	border: 1px solid #0e76bc;
@@ -705,6 +705,8 @@ input[type=submit]:hover {
     height: 50px;
     padding: 10px 20px;
 	margin-bottom: -10px;
+	position: relative;
+	z-index: 2;
 }
 
 #pop-banner > h4 {
@@ -715,6 +717,8 @@ input[type=submit]:hover {
 	padding: 25px 50px 0px;
 	border-radius: 9px;
     background: white;
+	position: relative;
+	z-index: 3;
 }
 
 .pop-actions {
