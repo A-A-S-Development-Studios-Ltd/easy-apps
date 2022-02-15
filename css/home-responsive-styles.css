@@ -44,25 +44,13 @@
 
 .feature-box { width: auto;  height: auto; }
 
-.box1 {
-	grid-row: 1 / 2;
-	grid-column: 1 / 2;
-}
-
-.box2 {
-	grid-row: 2 / 3;
-	grid-column: 1 / 2;
-}
-
-.box3 {
-	grid-row: 3 / 4;
-	grid-column: 1 / 2;
-}
-
-.box4 {
-	grid-row: 4 / 5;
-	grid-column: 1 / 2;
-}
+.box1 { grid-row: 1 / 2; grid-column: 1 / 2; }
+.box2 {	grid-row: 2 / 3; grid-column: 1 / 2; }
+.box3 {	grid-row: 3 / 4; grid-column: 1 / 2; }
+.box4 { grid-row: 4 / 5; grid-column: 1 / 2; }
+.box2-ani {	animation-delay: 0s !important; }
+.box3-ani {	animation-delay: 0s !important; }
+.box4-ani {	animation-delay: 0s !important; }
 
 .cards-container {
 	grid-template-columns:  auto;	
@@ -72,6 +60,8 @@
 .card1 { grid-column: 1/2; }
 .card2 { grid-column: 1/2; }
 .card3 { grid-column: 1/2; }
+.card2-ani { animation-delay: 0s !important; }
+.card3-ani { animation-delay: 0s !important; }
 
 .hero-bg-gsc {
 	width: 85%;
@@ -133,6 +123,9 @@
 	.card2 { grid-row: 2 / 4; grid-column: 2/3; }
 	.card3 { grid-row: 3 / 5; grid-column: 1/2; }
 	
+	.card2-ani { animation-delay: 0.5s !important; }
+	.card3-ani { animation-delay: 1s !important; }
+	
 }
 
 
@@ -190,6 +183,9 @@
 	.box2 {	grid-row: 2 / 4; grid-column: 2 / 3; }
 	.box3 {	grid-row: 3 / 5; grid-column: 1 / 2; }
 	.box4 {	grid-row: 4 / 6; grid-column: 2 / 3; }
+	.box2-ani {	animation-delay: 0.5s !important; }
+	.box3-ani {	animation-delay: 1s !important; }
+	.box4-ani {	animation-delay: 1.5s !important; }
 	
 	.hero-bg-gsc {
 		width: 55%;
