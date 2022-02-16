@@ -19,10 +19,17 @@
 		background: #2f2f2f;		
 	}
 		
-	#menu-cta .blue-button, .menu-button { background: #2f2f2f; }
+	#menu-cta .blue-button, .menu-button { 
+		border: 1px solid #0e76bc;
+		background: #2f2f2f;
+		color: #0e76bc;		
+	}
 	#menu-cta .blue-button:hover, .menu-button:hover { background: #182a37; }
 	
 	/*Footer Styles*/
+	.footer { background: #0c0d11; }
+	
+	.footer-cta { background: linear-gradient(124deg, rgba(9,142,45,1) 0%, rgba(0,103,46,1) 100%); }
 	
 	/*Home Page*/
 	.feature-box, .feature-cards { background: #282828; }	
@@ -31,10 +38,46 @@
 		background: url("../assets/background/bg-shape-dark.svg") no-repeat right top;
 	}
 	
+	.bg-banner {
+		background: rgba(19,77,165,1);
+		background: linear-gradient(124deg, rgba(19,77,165,1) 0%, rgba(19,77,165,1) 100%);
+	}
+		
+	.white-button {
+		border: 1px solid #0e76bc;
+		background: white;
+		color: #0e76bc;
+	}
+	.white-button:hover {
+		background: #e9f6ff;
+	}
+	
+	
+	.blue-button {
+		border: 1px solid #00ad63;
+		background: white;
+		color: #00ad63;
+	}
+	.blue-button:hover {
+		background: #dfffdf;
+	}
+	
 	img.hero-bg-cover { content: url('../assets/background/white-cover-dark.svg') }
 	
 	/* Other Pages */
 	.feature-element:hover { background: #282828; }	
+	
+	.green-bar, .green-header-bar {
+		background: linear-gradient(124deg, rgba(19,77,165,1) 0%, rgba(50,112,238,1) 50%, rgba(19,77,165,1) 100%);
+	}
+	
+	#feature-dots {
+		filter: brightness(0) saturate(100%) invert(31%) sepia(63%) saturate(1896%) hue-rotate(182deg) brightness(93%) contrast(89%);
+	}
+	
+	.bg-triangles, .bg-dots-video, .hero-bg-watermark, .hero-bg-gsc {
+		filter: brightness(0) saturate(100%) invert(42%) sepia(53%) saturate(2201%) hue-rotate(187deg) brightness(103%) contrast(94%);
+	}
 	
 	img.feature-bg-shape { content: url('../assets/background/bg-shape-dark.svg') }
 	

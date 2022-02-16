@@ -94,6 +94,7 @@ a:visited {
 }
 
 .white-button {
+	border: 1px solid #00ad63;
 	cursor: pointer;
 	border-radius: 6px; 
 	background: white; 
