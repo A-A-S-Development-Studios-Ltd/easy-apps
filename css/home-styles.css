@@ -37,13 +37,23 @@
 	left: 80px; 
 }
 
-.bg-banner2 {
+.bg-banner2 {	
+	position: relative;
 	width: 100%;
 	min-height: 820px;
-	background: url("../assets/background/bg-shape.svg") no-repeat right top;
-	background-size: contain;
-	position: relative;
 	margin: 0px auto 160px;
+}
+
+.bg-banner2::before {
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	background: url("../assets/background/bg-shape.svg") no-repeat right top;
+	background-size: contain;	
+    content: "";
+    z-index: -1;
 }
 
 .videoBanner {

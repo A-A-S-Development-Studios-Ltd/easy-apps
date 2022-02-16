@@ -34,8 +34,9 @@
 	/*Home Page*/
 	.feature-box, .feature-cards { background: #282828; }	
 	
-	.bg-banner2 {
+	.bg-banner2::before {
 		background: url("../assets/background/bg-shape-dark.svg") no-repeat right top;
+		opacity: 0.25;
 	}
 	
 	.bg-banner {
@@ -79,7 +80,7 @@
 		filter: brightness(0) saturate(100%) invert(42%) sepia(53%) saturate(2201%) hue-rotate(187deg) brightness(103%) contrast(94%);
 	}
 	
-	img.feature-bg-shape { content: url('../assets/background/bg-shape-dark.svg') }
+	img.feature-bg-shape { content: url('../assets/background/bg-shape-dark.svg');	opacity: 0.25; }
 	
 	#mask-circle, #mask-cutout {
 		filter: brightness(0) saturate(100%) invert(14%) sepia(1%) saturate(0%) hue-rotate(222deg) brightness(87%) contrast(102%);
