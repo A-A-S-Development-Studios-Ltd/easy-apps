@@ -92,7 +92,6 @@ function eventClick(clickedObject, redirectTarget) {
 	var pageName = window.location.pathname;		
 	if(pageName == '/'){ pageName = "Home";	}
 	var userBrowser = navigator.appVersion;
-	console.log(userBrowser);
 	
 	dataLayer.push({
 		'event': 'user-action',
