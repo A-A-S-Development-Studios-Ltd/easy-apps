@@ -30,7 +30,7 @@
 		</ul>
 	</div>
 	<div id="menu-cta">
-		<div class="blue-button" onclick="showOverlay()">
+		<div class="blue-button" onclick="eventClick('Menu-CTA1', 'showOverlay')">
 			<p>Free Consult</p>
 		</div>
 	</div>	
@@ -43,7 +43,7 @@
 <!-- Mobile Menu -->
 <div id="mobile-menu" class="mobile-menu-ani">
 	<ul>
-		<li style="color: #0e76bc;"  onclick="showOverlay()">Free Consult</li>
+		<li style="color: #0e76bc;" onclick="eventClick('Menu-CTA2', 'showOverlay')">Free Consult</li>
 		<a href="about.html"><li>About Us</li></a>
 		<a href="services.html"><li>Services</li></a>
 		<a href="pricing.html"><li>Pricing</li></a>
@@ -60,7 +60,7 @@
 		</div>	
 		<div class="pop-content">
 			<div id="pop-form">
-				<p>This 15m meeting will explain more details about the app development process, applicable contracts and answer any other questions.</p>
+				<p>This 15m meeting will explain more details about our app building process, applicable contracts and answer any other questions.</p>
 				<p><b>Fill out the form below to get started.</b></p>
 				<form id="pform">
 					<label for="name" id="name-label">Name:</label>
@@ -73,10 +73,10 @@
 					
 					<div class="pop-actions">
 						<div>
-							<input type="submit" value="Submit">
+							<input type="submit" value="Submit" onclick="eventClick('LM-Submit', '')">
 						</div>
 						<div class="pop-close">
-							<span onclick="closeOverlay()">Close</span>
+							<span onclick="eventClick('LM-Cancel', 'closeOverlay')">Close</span>
 						</div>			
 					</div>			
 				</form>
@@ -84,7 +84,7 @@
 			<div id="pop-success" class="displayNone">
 				<p><b>Thank you for contacting us.</b></p>
 				<p>A member from our client success team will reach out to you shortly.</p>	
-				<div class="blue-button" onclick="closeOverlay()" style="position: absolute; bottom: 40px; right: 40px;">
+				<div class="blue-button" onclick="eventClick('LM-Won', 'closeOverlay')">
 					<p>Close</p>
 				</div>					
 			</div>
@@ -92,7 +92,7 @@
 	</div>
 </div>
 <!-- Popup Overlay -->
-<div id="full-screen-overlay" class="fs-overlay-ani" onclick="closeOverlay()"></div>
+<div id="full-screen-overlay" class="fs-overlay-ani" onclick="eventClick('LM-Cancel', 'closeOverlay')"></div>
 <!-- Page Header -->
 <div class="bg-banner">
 	<img src="assets/background/white-cover.svg" class="hero-bg-cover" />
@@ -105,12 +105,12 @@
 				<p class="default white">Ready to design your dream app? With 30+ years of app development experience, our team is ready to help.</p>
 				<div class="hero-banner-actions">
 					<div class="hb-action-col1"> 
-						<div class="white-button" onclick="showOverlay()">
+						<div class="white-button" onclick="eventClick('CTA1', 'showOverlay')">
 							<p>Get Started</p>
 						</div>
 					</div>
 					<div class="hb-action-col2">
-						<p style="margin-top: 8px; font-weight: bolder;"><a onclick="scrollPage('home-section1')" class="text-link white on-green">Find out More >></a></p>
+						<p style="margin-top: 8px; font-weight: bolder;"><a onclick="eventClick('LM1', 'homeScroll-1')" class="text-link white on-green">Find out More >></a></p>
 					</div>
 				</div>
 			</div>
@@ -140,7 +140,7 @@
 			<h2 class="default">Perfect for connecting with your customers</h2>
 			<p class="default">Let our design team help you put the finishing touches on your very own custom built web or mobile application.</p>
 			<div style="margin-top: 40px">
-				<p style="font-weight: bolder;"><a href="services.html" class="text-link on-white">Learn More >></a></p>
+				<p style="font-weight: bolder;"><a onclick="eventClick('LM2', 'services')" class="text-link on-white">Learn More >></a></p>
 			</div>
 		</div>
 	</div>
@@ -193,7 +193,7 @@
 				<h2 class="default">Optimal user experience for best performance</h2>
 				<p class="default">Users should be able to use your apps without explanation, together we will optimise your customers' user experience.</p>
 				<div style="margin-top: 40px">
-					<p style="font-weight: bolder;"><a class="text-link on-white" onclick="showOverlay()">Get Started >></a></p>
+					<p style="font-weight: bolder;"><a class="text-link on-white" onclick="eventClick('CTA2', 'showOverlay')">Get Started >></a></p>
 				</div>
 			</div>
 		</div>
@@ -232,7 +232,7 @@
 			<h5 class="default white">Try it today</h5>
 			<h3 class="default white">Download our Sample App to Experience it Yourself</h3>
 			<p class="default white">Responsively designed for mobile devices, Easy PDF Signer is a simple document management app that tracks document signatures, signature requests and much more.</p>
-			<a href="https://easypdfsigner.ca/" target="_blank">
+			<a onclick="eventClick('VP-ePDF', 'easyPDF')">
 				<div class="white-button" style="margin-top: 40px">
 					<p>Visit Site</p>
 				</div>
@@ -258,7 +258,7 @@
 			<p class="default white">Schedule your free consultation to see how we can best help make your dream app into a reality.</p>
 		</div>
 		<div class="footer-cta-col2">
-			<div class="blue-button" onclick="showOverlay()">
+			<div class="blue-button" onclick="eventClick('Footer-CTA', 'showOverlay')">
 				<p>Free Consult</p>
 			</div>		
 		</div>	
@@ -274,13 +274,13 @@
 			</p>
 		</div>		
 		<div class="footer-col2">
-			<h6 class="default white">Download</h6>
-			<p><a href="https://easypdfsigner.ca/" target="_blank" class="darkGrey footer-link">Easy PDF Signer</a></p>
-			<p><a href="https://qa.easy-apps.ca/easytodo/app/login" target="_blank" class="darkGrey footer-link">Easy Todo (Beta)</a></p>
-			<p><a href="https://itch.io/jam/game-off-2021/rate/1286854"  target="_blank" class="darkGrey footer-link">Buginator</a> 
+			<h6 class="default white">Portfolio</h6>
+			<p><a onclick="eventClick('FVP-ePDF', 'easyPDF')" class="darkGrey footer-link">Easy PDF Signer</a></p>
+			<p><a onclick="eventClick('FVP-eTodo', 'easyTodo')" class="darkGrey footer-link">Easy Todo (Beta)</a></p>
+			<p><a onclick="eventClick('FVP-Buginator', 'buginator')" class="darkGrey footer-link">Buginator</a> 
 				<span class="darkGrey" style="margin-left:10px;">
-					<a href="https://play.google.com/store/apps/details?id=com.a.a.s.developmentstudios.githubgameoff2021" target="_blank"><img class="footer-link-icon" src="assets/icons/android.svg" width="17px" /></a> / 
-					<a href="https://apps.apple.com/us/app/buginator/id1597865535" target="_blank"><img class="footer-link-icon" src="assets/icons/apple.svg" width="17px" /></a>		
+					<a onclick="eventClick('FVP-Bug-Android', 'bug-android')"><img class="footer-link-icon" src="assets/icons/android.svg" width="17px" /></a> / 
+					<a onclick="eventClick('FVP-Bug-Apple', 'bug-apple')"><img class="footer-link-icon" src="assets/icons/apple.svg" width="17px" /></a>		
 				</span>
 			</p>
 		</div>

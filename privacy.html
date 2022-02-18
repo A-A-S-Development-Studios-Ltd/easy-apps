@@ -27,7 +27,7 @@
 		</ul>
 	</div>
 	<div id="menu-cta">
-		<div class="blue-button" onclick="showOverlay()">
+		<div class="blue-button" onclick="eventClick('Menu-CTA1', 'showOverlay')">
 			<p>Free Consult</p>
 		</div>
 	</div>	
@@ -40,7 +40,7 @@
 <!-- Mobile Menu -->
 <div id="mobile-menu" class="mobile-menu-ani">
 	<ul>
-		<li style="color: #0e76bc;"  onclick="showOverlay()">Free Consult</li>
+		<li style="color: #0e76bc;" onclick="eventClick('Menu-CTA2', 'showOverlay')">Free Consult</li>
 		<a href="about.html"><li>About Us</li></a>
 		<a href="services.html"><li>Services</li></a>
 		<a href="pricing.html"><li>Pricing</li></a>
@@ -57,7 +57,7 @@
 		</div>	
 		<div class="pop-content">
 			<div id="pop-form">
-				<p>This 15m meeting will explain more details about the app development process, applicable contracts and answer any other questions.</p>
+				<p>This 15m meeting will explain more details about our app building process, applicable contracts and answer any other questions.</p>
 				<p><b>Fill out the form below to get started.</b></p>
 				<form id="pform">
 					<label for="name" id="name-label">Name:</label>
@@ -70,10 +70,10 @@
 					
 					<div class="pop-actions">
 						<div>
-							<input type="submit" value="Submit">
+							<input type="submit" value="Submit" onclick="eventClick('LM-Submit', '')">
 						</div>
 						<div class="pop-close">
-							<span onclick="closeOverlay()">Close</span>
+							<span onclick="eventClick('LM-Cancel', 'closeOverlay')">Close</span>
 						</div>			
 					</div>			
 				</form>
@@ -81,7 +81,7 @@
 			<div id="pop-success" class="displayNone">
 				<p><b>Thank you for contacting us.</b></p>
 				<p>A member from our client success team will reach out to you shortly.</p>	
-				<div class="blue-button" onclick="closeOverlay()" style="position: absolute; bottom: 40px; right: 40px;">
+				<div class="blue-button" onclick="eventClick('LM-Won', 'closeOverlay')">
 					<p>Close</p>
 				</div>					
 			</div>
@@ -89,7 +89,7 @@
 	</div>
 </div>
 <!-- Popup Overlay -->
-<div id="full-screen-overlay" class="fs-overlay-ani" onclick="closeOverlay()"></div>
+<div id="full-screen-overlay" class="fs-overlay-ani" onclick="eventClick('LM-Cancel', 'closeOverlay')"></div>
 <!-- Page Header -->
 <div class="green-header-bar entr-ani">
 	<img src="assets/background/bg-triangles.svg" class="bg-triangles" />	
@@ -235,7 +235,7 @@
 			<p class="default white">Schedule your free consultation to see how we can best help make your dream app into a reality.</p>
 		</div>
 		<div class="footer-cta-col2">
-			<div class="blue-button" onclick="showOverlay()">
+			<div class="blue-button" onclick="eventClick('Footer-CTA', 'showOverlay')">
 				<p>Free Consult</p>
 			</div>		
 		</div>	
@@ -251,13 +251,13 @@
 			</p>
 		</div>		
 		<div class="footer-col2">
-			<h6 class="default white">Download</h6>
-			<p><a href="https://easypdfsigner.ca/" target="_blank" class="darkGrey footer-link">Easy PDF Signer</a></p>
-			<p><a href="https://qa.easy-apps.ca/easytodo/app/login" target="_blank" class="darkGrey footer-link">Easy Todo (Beta)</a></p>
-			<p><a href="https://itch.io/jam/game-off-2021/rate/1286854"  target="_blank" class="darkGrey footer-link">Buginator</a> 
+			<h6 class="default white">Portfolio</h6>
+			<p><a onclick="eventClick('FVP-ePDF', 'easyPDF')" class="darkGrey footer-link">Easy PDF Signer</a></p>
+			<p><a onclick="eventClick('FVP-eTodo', 'easyTodo')" class="darkGrey footer-link">Easy Todo (Beta)</a></p>
+			<p><a onclick="eventClick('FVP-Buginator', 'buginator')" class="darkGrey footer-link">Buginator</a> 
 				<span class="darkGrey" style="margin-left:10px;">
-					<a href="https://play.google.com/store/apps/details?id=com.a.a.s.developmentstudios.githubgameoff2021" target="_blank"><img class="footer-link-icon" src="assets/icons/android.svg" width="17px" /></a> / 
-					<a href="https://apps.apple.com/us/app/buginator/id1597865535" target="_blank"><img class="footer-link-icon" src="assets/icons/apple.svg" width="17px" /></a>		
+					<a onclick="eventClick('FVP-Bug-Android', 'bug-android')"><img class="footer-link-icon" src="assets/icons/android.svg" width="17px" /></a> / 
+					<a onclick="eventClick('FVP-Bug-Apple', 'bug-apple')"><img class="footer-link-icon" src="assets/icons/apple.svg" width="17px" /></a>		
 				</span>
 			</p>
 		</div>
