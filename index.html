@@ -17,25 +17,25 @@
 <!-- Navigation Menu -->
 <header id="menu-bar">
 	<div id="menu-logo-container">
-		<a href="/">
+		<a href="/" tabindex="0">
 			<img alt="Easy Apps Logo" title="Easy Apps" src="assets/logo/easy-apps-logo.svg" id="menu-logo" />	
 		</a>
 	</div>
 	<nav id="menu-links" role="navigation" aria-label="Main Navigation">
 		<ul>
-			<a href="about.html"><li>About Us</li></a>
-			<a href="services.html"><li>Services</li></a>
-			<a href="pricing.html"><li>Pricing</li></a>
-			<a href="contact.html"><li>Contact</li></a>
+			<a href="about.html" tabindex="0"><li>About Us</li></a>
+			<a href="services.html" tabindex="0"><li>Services</li></a>
+			<a href="pricing.html" tabindex="0"><li>Pricing</li></a>
+			<a href="contact.html" tabindex="0"><li>Contact</li></a>
 		</ul>
 	</nav>
 	<div id="menu-cta">
-		<div class="blue-button" onclick="eventClick('Menu-CTA1', 'showOverlay')">
+		<div class="blue-button" onclick="eventClick('Menu-CTA1', 'showOverlay')" tabindex="0">
 			<p>Free Consult</p>
 		</div>
 	</div>	
 	<div id="menu-mobile-btn">
-		<div class="menu-button" onclick="showMenu()">
+		<div class="menu-button" onclick="showMenu()" tabindex="0">
 			<img alt="Menu Button" title="Menu" src="assets/icons/menu-icon.svg" id="menu-icon" />
 		</div>
 	</div>	
@@ -43,15 +43,15 @@
 <!-- Mobile Menu -->
 <nav id="mobile-menu" class="mobile-menu-ani" aria-label="Mobile Navigation">
 	<ul>
-		<li style="color: #0e76bc;" onclick="eventClick('Menu-CTA2', 'showOverlay')">Free Consult</li>
-		<a href="about.html"><li>About Us</li></a>
-		<a href="services.html"><li>Services</li></a>
-		<a href="pricing.html"><li>Pricing</li></a>
-		<a href="contact.html"><li>Contact</li></a>
+		<li style="color: #0e76bc;" onclick="eventClick('Menu-CTA2', 'showOverlay')" tabindex="0">Free Consult</li>
+		<a href="about.html" tabindex="0"><li>About Us</li></a>
+		<a href="services.html" tabindex="0"><li>Services</li></a>
+		<a href="pricing.html" tabindex="0"><li>Pricing</li></a>
+		<a href="contact.html" tabindex="0"><li>Contact</li></a>
 	</ul>
 </nav>
 <!-- Mobile Menu Overlay -->
-<div id="menu-overlay" class="mobile-menu-ani" onclick="showMenu()"></div>
+<div id="menu-overlay" class="mobile-menu-ani" onclick="showMenu()" tabindex="0"></div>
 <!-- Popup Window -->
 <div id="pop-window" class="pop-window-ani">
 	<div>
@@ -76,7 +76,7 @@
 							<input type="submit" value="Submit" onclick="eventClick('LM-Submit', '')">
 						</div>
 						<div class="pop-close">
-							<span onclick="eventClick('LM-Cancel', 'closeOverlay')">Close</span>
+							<span tabindex="0" onclick="eventClick('LM-Cancel', 'closeOverlay')">Close</span>
 						</div>			
 					</div>			
 				</form>
@@ -84,7 +84,7 @@
 			<div id="pop-success" class="displayNone">
 				<p><b>Thank you for contacting us.</b></p>
 				<p>A member from our client success team will reach out to you shortly.</p>	
-				<div class="blue-button" onclick="eventClick('LM-Won', 'closeOverlay')">
+				<div class="blue-button" onclick="eventClick('LM-Won', 'closeOverlay')" tabindex="0">
 					<p>Close</p>
 				</div>					
 			</div>
@@ -92,7 +92,7 @@
 	</div>
 </div>
 <!-- Popup Overlay -->
-<div id="full-screen-overlay" class="fs-overlay-ani" onclick="eventClick('LM-Cancel', 'closeOverlay')"></div>
+<div id="full-screen-overlay" class="fs-overlay-ani" onclick="eventClick('LM-Cancel', 'closeOverlay')" tabindex="0"></div>
 <main role="main">
 <!-- Page Header -->
 <div class="bg-banner">
@@ -106,12 +106,12 @@
 				<p class="default white">Ready to design your dream app? With 30+ years of app development experience, our team is ready to help.</p>
 				<div class="hero-banner-actions">
 					<div class="hb-action-col1"> 
-						<div class="white-button" onclick="eventClick('CTA1', 'showOverlay')">
+						<div class="white-button" tabindex="0" onclick="eventClick('CTA1', 'showOverlay')">
 							<p>Get Started</p>
 						</div>
 					</div>
 					<div class="hb-action-col2">
-						<p style="margin-top: 8px; font-weight: bolder;"><a onclick="eventClick('LM1', 'homeScroll-1')" class="text-link white on-green">Find out More >></a></p>
+						<p style="margin-top: 8px; font-weight: bolder;"><a onclick="eventClick('LM1', 'homeScroll-1')" class="text-link white on-green" tabindex="0">Find out More >></a></p>
 					</div>
 				</div>
 			</div>
@@ -141,7 +141,7 @@
 			<h2 class="default">Perfect for connecting with your customers</h2>
 			<p class="default">Let our design team help you put the finishing touches on your very own custom built web or mobile application.</p>
 			<div style="margin-top: 40px">
-				<p style="font-weight: bolder;"><a onclick="eventClick('LM2', 'services')" class="text-link on-white">Learn More >></a></p>
+				<p style="font-weight: bolder;"><a onclick="eventClick('LM2', 'services')" class="text-link on-white" tabindex="0">Learn More >></a></p>
 			</div>
 		</div>
 	</div>
@@ -194,7 +194,7 @@
 				<h2 class="default">Optimal user experience for best performance</h2>
 				<p class="default">Users should be able to use your apps without explanation, together we will optimise your customers' user experience.</p>
 				<div style="margin-top: 40px">
-					<p style="font-weight: bolder;"><a class="text-link on-white" onclick="eventClick('CTA2', 'showOverlay')">Get Started >></a></p>
+					<p style="font-weight: bolder;"><a class="text-link on-white" onclick="eventClick('CTA2', 'showOverlay')" tabindex="0">Get Started >></a></p>
 				</div>
 			</div>
 		</div>
@@ -233,7 +233,7 @@
 			<h5 class="default white">Try it today</h5>
 			<h3 class="default white">Download our Sample App to Experience it Yourself</h3>
 			<p class="default white">Responsively designed for mobile devices, Easy PDF Signer is a simple document management app that tracks document signatures, signature requests and much more.</p>
-			<a onclick="eventClick('VP-ePDF', 'easyPDF')">
+			<a tabindex="0" onclick="eventClick('VP-ePDF', 'easyPDF')">
 				<div class="white-button" style="margin-top: 40px">
 					<p>Visit Site</p>
 				</div>
@@ -260,7 +260,7 @@
 			<p class="default white">Schedule your free consultation to see how we can best help make your dream app into a reality.</p>
 		</div>
 		<div class="footer-cta-col2">
-			<div class="blue-button" onclick="eventClick('Footer-CTA', 'showOverlay')">
+			<div class="blue-button" onclick="eventClick('Footer-CTA', 'showOverlay')" tabindex="0">
 				<p>Free Consult</p>
 			</div>		
 		</div>	
@@ -270,27 +270,27 @@
 <footer class="footer">
 	<div class="footer-container">
 		<div class="footer-col1">
-			<a href="/"><img alt="Easy Apps Logo" title="Easy Apps" src="assets/logo/easy-apps-logo.svg" width="300px" ></a>
+			<a href="/" tabindex="0"><img alt="Easy Apps Logo" title="Easy Apps" src="assets/logo/easy-apps-logo.svg" width="300px" ></a>
 			<p class="default darkGrey footer-copy-text">
 				&copy; A.A.S. Development Studios Ltd. 2022
 			</p>
 		</div>		
 		<div class="footer-col2">
 			<h6 class="default white">Portfolio</h6>
-			<p><a onclick="eventClick('FVP-ePDF', 'easyPDF')" class="darkGrey footer-link">Easy PDF Signer</a></p>
-			<p><a onclick="eventClick('FVP-eTodo', 'easyTodo')" class="darkGrey footer-link">Easy Todo (Beta)</a></p>
-			<p><a onclick="eventClick('FVP-Buginator', 'buginator')" class="darkGrey footer-link">Buginator</a> 
+			<p><a onclick="eventClick('FVP-ePDF', 'easyPDF')" class="darkGrey footer-link" tabindex="0">Easy PDF Signer</a></p>
+			<p><a onclick="eventClick('FVP-eTodo', 'easyTodo')" class="darkGrey footer-link" tabindex="0">Easy Todo (Beta)</a></p>
+			<p><a onclick="eventClick('FVP-Buginator', 'buginator')" class="darkGrey footer-link" tabindex="0">Buginator</a> 
 				<span class="darkGrey" style="margin-left:10px;">
-					<a onclick="eventClick('FVP-Bug-Android', 'bug-android')"><img alt="Android" class="footer-link-icon" src="assets/icons/android.svg" width="17px" /></a> / 
-					<a onclick="eventClick('FVP-Bug-Apple', 'bug-apple')"><img alt="Apple" class="footer-link-icon" src="assets/icons/apple.svg" width="17px" /></a>		
+					<a onclick="eventClick('FVP-Bug-Android', 'bug-android')" tabindex="0"><img alt="Android" class="footer-link-icon" src="assets/icons/android.svg" width="17px" /></a> / 
+					<a onclick="eventClick('FVP-Bug-Apple', 'bug-apple')" tabindex="0"><img alt="Apple" class="footer-link-icon" src="assets/icons/apple.svg" width="17px" /></a>		
 				</span>
 			</p>
 		</div>
 		<div class="footer-col3">
 			<h6 class="default white">Company</h6>
-			<p><a href="about.html" class="darkGrey footer-link">About</a></p>
-			<p><a href="contact.html" class="darkGrey footer-link">Contact</a></p>
-			<p><a href="privacy.html" class="darkGrey footer-link">Privacy Policy</a></p>
+			<p><a href="about.html" class="darkGrey footer-link" tabindex="0">About</a></p>
+			<p><a href="contact.html" class="darkGrey footer-link" tabindex="0">Contact</a></p>
+			<p><a href="privacy.html" class="darkGrey footer-link" tabindex="0">Privacy Policy</a></p>
 		</div>
 		<div class="footer-col4">
 			<h6 class="default white">Social</h6>
