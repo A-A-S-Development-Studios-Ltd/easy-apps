@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Easy Apps | Contact</title>	
@@ -12,20 +12,20 @@
 </head>
 <body style="margin: 0; padding: 0">
 <!-- Navigation Menu -->
-<div id="menu-bar">
+<header id="menu-bar">
 	<div id="menu-logo-container">
 		<a href="/">
 			<img alt="Easy Apps Logo" title="Easy Apps" src="assets/logo/easy-apps-logo.svg" id="menu-logo" />	
 		</a>
 	</div>
-	<div id="menu-links">
+	<nav id="menu-links" role="navigation" aria-label="Main Navigation">
 		<ul>
 			<a href="about.html"><li>About Us</li></a>
 			<a href="services.html"><li>Services</li></a>
 			<a href="pricing.html"><li>Pricing</li></a>
 			<li class="active-link">Contact</li>
 		</ul>
-	</div>
+	</nav>
 	<div id="menu-cta">
 		<div class="blue-button" onclick="eventClick('Menu-CTA1', 'showOverlay')">
 			<p>Free Consult</p>
@@ -36,9 +36,9 @@
 			<img alt="Menu Button" title="Menu" src="assets/icons/menu-icon.svg" id="menu-icon" />
 		</div>
 	</div>	
-</div>
+</header>
 <!-- Mobile Menu -->
-<div id="mobile-menu" class="mobile-menu-ani">
+<nav id="mobile-menu" class="mobile-menu-ani" aria-label="Mobile Navigation">
 	<ul>
 		<li style="color: #0e76bc;" onclick="eventClick('Menu-CTA2', 'showOverlay')">Free Consult</li>
 		<a href="about.html"><li>About Us</li></a>
@@ -46,7 +46,7 @@
 		<a href="pricing.html"><li>Pricing</li></a>
 		<li class="active-link">Contact</li>
 	</ul>
-</div>
+</nav>
 <!-- Mobile Menu Overlay -->
 <div id="menu-overlay" class="mobile-menu-ani" onclick="showMenu()"></div>
 <!-- Popup Window -->
@@ -90,9 +90,10 @@
 </div>
 <!-- Popup Overlay -->
 <div id="full-screen-overlay" class="fs-overlay-ani" onclick="eventClick('LM-Cancel', 'closeOverlay')"></div>
+<main role="main">
 <!-- Page Header -->
 <div class="green-header-bar entr-ani">
-	<img src="assets/background/bg-triangles.svg" class="bg-triangles" />	
+	<img alt="" src="assets/background/bg-triangles.svg" class="bg-triangles" />	
 	<div class="global-container header-text-container">
 		<h5 class="default white">Apps, The Easy Way</h5>
 		<h3 class="default white">Ready for Another Journey</h3>
@@ -101,9 +102,9 @@
 <!-- Page Feature animation -->
 <div class="feature-animation entr-ani">
 	<div>
-		<img src="assets/background/dot-feature.svg" id="feature-dots" />
-		<img src="assets/background/mask-circle.svg" id="mask-circle" />
-		<img src="assets/background/mask-cutout.svg" id="mask-cutout" />
+		<img alt="" src="assets/background/dot-feature.svg" id="feature-dots" />
+		<img alt="" src="assets/background/mask-circle.svg" id="mask-circle" />
+		<img alt="" src="assets/background/mask-cutout.svg" id="mask-cutout" />
 	</div>
 </div>
 <!-- Page Content Row -->
@@ -115,7 +116,7 @@
 <div class="global-container two-col-container entr-ani" style="position: relative;">
 	<div class="two-col1">
 		<div style="display: flex; flex-direction: column; max-width: 520px;">
-			<img src="assets/logo/easy-apps-logo.svg" width="350px" style="max-width:95%"/>		
+			<img alt="Easy Apps Logo" src="assets/logo/easy-apps-logo.svg" width="350px" style="max-width:95%"/>		
 			<div style="width: 100%; height: 25px;"></div>
 			<h1 class="default">We&apos;re Here,<br/>Send us a Message</h1>
 			<p>If you have any questions about our services or if we can help with your app or existing software, please reach out and we will be happy to see how we may assist you.</p>
@@ -155,15 +156,16 @@
 <div style="position: relative; top: 90px;">
 	<div class="bg-shape-box1">	
 		<div class="bg-shape-inner-container">
-			<img src="assets/background/blue-dot.svg" class="bg-shapes bd1" />
-			<img src="assets/background/green-triangle.svg" class="bg-shapes gt1" />
+			<img alt="" src="assets/background/blue-dot.svg" class="bg-shapes bd1" />
+			<img alt="" src="assets/background/green-triangle.svg" class="bg-shapes gt1" />
 		</div>
 	</div>
 </div>
 <!-- Spacer -->
 <div style="width: 100%; height: 250px;"></div>
+</main>
 <!-- Footer -->
-<div class="footer">
+<footer class="footer">
 	<div class="footer-container">
 		<div class="footer-col1">
 			<a href="/"><img alt="Easy Apps Logo" title="Easy Apps" src="assets/logo/easy-apps-logo.svg" width="300px" ></a>
@@ -177,8 +179,8 @@
 			<p><a onclick="eventClick('FVP-eTodo', 'easyTodo')" class="darkGrey footer-link">Easy Todo (Beta)</a></p>
 			<p><a onclick="eventClick('FVP-Buginator', 'buginator')" class="darkGrey footer-link">Buginator</a> 
 				<span class="darkGrey" style="margin-left:10px;">
-					<a onclick="eventClick('FVP-Bug-Android', 'bug-android')"><img class="footer-link-icon" src="assets/icons/android.svg" width="17px" /></a> / 
-					<a onclick="eventClick('FVP-Bug-Apple', 'bug-apple')"><img class="footer-link-icon" src="assets/icons/apple.svg" width="17px" /></a>		
+					<a onclick="eventClick('FVP-Bug-Android', 'bug-android')"><img alt="Android" class="footer-link-icon" src="assets/icons/android.svg" width="17px" /></a> / 
+					<a onclick="eventClick('FVP-Bug-Apple', 'bug-apple')"><img alt="Apple" class="footer-link-icon" src="assets/icons/apple.svg" width="17px" /></a>		
 				</span>
 			</p>
 		</div>
@@ -191,12 +193,12 @@
 		<div class="footer-col4">
 			<h6 class="default white">Social</h6>
 			<div style="display:inline-flex;">
-				<img src="assets/icons/facebook.svg" width="50px" class="social-link" />
-				<img src="assets/icons/linkedin.svg" width="50px" class="social-link" />
+				<img alt="Facebook" src="assets/icons/facebook.svg" width="50px" class="social-link" />
+				<img alt="LinkedIn" src="assets/icons/linkedin.svg" width="50px" class="social-link" />
 			</div>
 		</div>
 	</div>	
-</div>
+</footer>
 <!-- Scripts -->
 <script src="/scripts/main-scripts.js"></script>
 <script src="/scripts/contact-script.js"></script>

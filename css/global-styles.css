@@ -74,7 +74,7 @@ a {
 }
 
 a:visited {
-	color: #868686;
+	color: #8C8C8C;
 }
 
 .default {
@@ -90,15 +90,15 @@ a:visited {
 }
 
 .darkGrey {
-	color: #868686;
+	color: #8C8C8C;
 }
 
 .white-button {
-	border: 1px solid #00ad63;
+	border: 1px solid #038236;
 	cursor: pointer;
 	border-radius: 6px; 
 	background: white; 
-	color: #00ad63; 
+	color: #038236; 
 	padding: 3px; 
 	width:180px; 
 	text-align: center;
@@ -225,14 +225,14 @@ a:visited {
 }
 
 #menu-links ul li:hover {
-	color: #00a651;
+	color: #038236;
 	box-shadow: 1px 2px 8px 0px rgba(0,0,0,0.25);
 }
 
 #menu-links ul a { color: inherit; }
 
 #menu-links ul li.active-link {
-	color: #00a651;
+	color: #038236;
 }
 
 #menu-links ul li.active-link:hover {
@@ -298,12 +298,12 @@ a:visited {
 
 #mobile-menu ul li:hover {	
 	cursor: pointer;
-	color: #00a651;
+	color: #038236;
 	box-shadow: 1px 2px 8px 0px rgba(0,0,0,0.25);
 }
 
 #mobile-menu ul li.active-link {
-	color: #00a651;
+	color: #038236;
 }
 
 #mobile-menu ul li.active-link:hover {
