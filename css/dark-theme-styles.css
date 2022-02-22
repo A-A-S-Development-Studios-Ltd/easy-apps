@@ -31,7 +31,9 @@
 		color: #7AC4F5;
 	}
 	
-	#mobile-menu ul li:hover {
+	#menu-links ul li.active-link, #mobile-menu ul li.active-link { color: #8BCB90; }
+	
+	#menu-links ul li:hover, #mobile-menu ul li:hover {
 		color: #8BCB90;
 	}
 	
