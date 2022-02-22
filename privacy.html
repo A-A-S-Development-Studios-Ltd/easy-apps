@@ -49,45 +49,8 @@
 </nav>
 <!-- Mobile Menu Overlay -->
 <div id="menu-overlay" class="mobile-menu-ani" onclick="showMenu()" tabindex="0"></div>
-<!-- Popup Window -->
-<div id="pop-window" class="pop-window-ani">
-	<div>
-		<div id="pop-banner">
-			<h4 class="white"><span id="pop-title">Schedule your free consultation</span></h4>
-		</div>	
-		<div class="pop-content">
-			<div id="pop-form">
-				<p>This 15m meeting will explain more details about our app building process, applicable contracts and answer any other questions.</p>
-				<p><b>Fill out the form below to get started.</b></p>
-				<form id="pform">
-					<label for="name" id="name-label">Name:</label>
-					<input type="text" id="name" name="name" placeholder="Your name.." required>
-
-					<label for="email" id="email-label">Email:</label>
-					<input type="text" id="email" name="email" placeholder="Your contact info.." required>
-					
-					<input type="hidden" name="message" value="No Message">
-					
-					<div class="pop-actions">
-						<div>
-							<input type="submit" value="Submit" onclick="eventClick('LM-Submit', '')">
-						</div>
-						<div class="pop-close">
-							<span onclick="eventClick('LM-Cancel', 'closeOverlay')" tabindex="0">Close</span>
-						</div>			
-					</div>			
-				</form>
-			</div>
-			<div id="pop-success" class="displayNone">
-				<p><b>Thank you for contacting us.</b></p>
-				<p>A member from our client success team will reach out to you shortly.</p>	
-				<div class="blue-button" onclick="eventClick('LM-Won', 'closeOverlay')" tabindex="0">
-					<p>Close</p>
-				</div>					
-			</div>
-		</div>
-	</div>
-</div>
+<!-- Popup Window (Injected from overlay-script.js) -->
+<div id="pop-window" class="pop-window-ani"></div>
 <!-- Popup Overlay -->
 <div id="full-screen-overlay" class="fs-overlay-ani" onclick="eventClick('LM-Cancel', 'closeOverlay')" tabindex="0"></div>
 <main role="main">
@@ -247,6 +210,8 @@
 <footer class="footer"></footer>
 <!-- Scripts -->
 <script src="/scripts/main-scripts.js"></script>
+<script src="/scripts/footer-script.js"></script>
+<script src="/scripts/overlay-script.js"></script>
 <script src="/scripts/about-script.js"></script>
 </body>
 </html>
