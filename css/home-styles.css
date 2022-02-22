@@ -144,7 +144,13 @@
 	transition: box-shadow 0.3s;
 }
 
-.feature-box h4, .feature-box p {
+.feature-box h3 {
+	font-family: "Comfortaa", monospace;
+	font-size: 1.4em;
+	font-weight: 900;
+}
+
+.feature-box h3, .feature-box p {
 	cursor: default;
 }
 

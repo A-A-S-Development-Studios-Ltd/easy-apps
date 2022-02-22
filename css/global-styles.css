@@ -59,7 +59,7 @@ h5, .page-sub-header {
 	margin-bottom: 0px;
 }
 
-h6, .footer-sub-header {
+h6, h4.footer-sub-header {
 	font-family: "DejaVu Sans", monospace;
 	font-size: 1.7em;
 	font-weight: 900;
