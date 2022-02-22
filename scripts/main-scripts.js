@@ -38,7 +38,7 @@ var htmlTemplate = `<div class="footer-container">
 			</p>
 		</div>		
 		<div class="footer-col2">
-			<p class="footer-sub-header default white">Portfolio</p>
+			<h6 class="default white">Portfolio</h6>
 			<p><a onclick="eventClick('FVP-ePDF', 'easyPDF')" class="darkGrey footer-link" tabindex="0">Easy PDF Signer</a></p>
 			<p><a onclick="eventClick('FVP-eTodo', 'easyTodo')" class="darkGrey footer-link" tabindex="0">Easy Todo (Beta)</a></p>
 			<p><a onclick="eventClick('FVP-Buginator', 'buginator')" class="darkGrey footer-link" tabindex="0">Buginator</a> 
@@ -49,13 +49,13 @@ var htmlTemplate = `<div class="footer-container">
 			</p>
 		</div>
 		<div class="footer-col3">
-			<p class="footer-sub-header default white">Company</p>
+			<h6 class="default white">Company</h6>
 			<p><a href="about.html" class="darkGrey footer-link" tabindex="0">About</a></p>
 			<p><a href="contact.html" class="darkGrey footer-link" tabindex="0">Contact</a></p>
 			<p><a href="privacy.html" class="darkGrey footer-link" tabindex="0">Privacy Policy</a></p>
 		</div>
 		<div class="footer-col4">
-			<p class="footer-sub-header default white">Social</p>
+			<h6 class="default white">Social</h6>
 			<div style="display:inline-flex;">
 				<img alt="Facebook" src="assets/icons/facebook.svg" width="50px" class="social-link" />
 				<img alt="LinkedIn" src="assets/icons/linkedin.svg" width="50px" class="social-link" />
