@@ -20,11 +20,22 @@
 	}
 		
 	#menu-cta .blue-button, .menu-button { 
-		border: 1px solid #0e76bc;
+		border: 1px solid #7AC4F5;
 		background: #2f2f2f;
-		color: #0e76bc;		
+		color: #7AC4F5;		
 	}
+	
 	#menu-cta .blue-button:hover, .menu-button:hover { background: #182a37; }
+		
+	#mobile-menu > ul > li:first-child {
+		color: #7AC4F5;
+	}
+	
+	#mobile-menu ul li:hover {
+		color: #8BCB90;
+	}
+	
+	#menu-icon { filter: brightness(0) saturate(100%) invert(78%) sepia(6%) saturate(5145%) hue-rotate(175deg) brightness(100%) contrast(93%); }
 	
 	/*Footer Styles*/
 	.footer { background: #0c0d11; }
@@ -51,17 +62,17 @@
 	}
 	.white-button:hover {
 		background: #e9f6ff;
-	}
-	
+	}	
 	
 	.blue-button {
-		border: 1px solid #00ad63;
+		border: 1px solid #00663A;
 		background: white;
-		color: #00ad63;
+		color: #00663A;
 	}
 	.blue-button:hover {
 		background: #dfffdf;
-	}
+		color: #006137;
+	}	
 	
 	img.hero-bg-cover { content: url('../assets/background/white-cover-dark.svg') }
 	
