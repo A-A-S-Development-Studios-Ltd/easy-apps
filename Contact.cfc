@@ -32,7 +32,7 @@ component extends="Master" {
 		}
 		
 		var message = "The customer submitted the following info:<br><br>Name: #formName#<br>Email: #formEmail# <br> Message: #data.message#";
-		sendEmail(to = "aafehr@gmail.com", subject = "Someone filled out the contact request form", body = message);
+		sendEmail(to = "contact@easy-apps.ca", subject = "Someone filled out the contact request form", body = message);
 		return "success";
 	}
 }
